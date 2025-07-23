@@ -1,0 +1,16 @@
+You are a game designer, and this is the game design document for the game you’re creating.
+
+{overview}
+
+Below is a VGDL file.
+
+{vgdl}
+
+Please generate the corresponding level file based on this VGDL definition. Please make sure is level is at least 8x8 size. In particular, consult the LevelMapping section to identify each game object and its single‐word abbreviation. Then produce an ASCII‑based level, formatted as follows:
+
+You can use "." to represent empty space. Please make sure player is in the level.
+
+```level
+YOUR LEVEL
+```
+Please think step by step.

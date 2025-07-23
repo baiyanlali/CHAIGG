@@ -1,0 +1,42 @@
+{
+  "SpriteCounter": {
+    "name": "SpriteCounter",
+    "description": "Ends game based on sprite count and limit.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer",
+          "description": "maximum sprite count allowed."
+        },
+        "stype": {
+          "type": "string",
+          "description": "type of sprite to count."
+        },
+        "win": {
+          "type": "boolean",
+          "description": "true if reaching limit wins."
+        }
+      },
+      "required": ["limit", "stype", "win"]
+    }
+  },
+  "Timeout": {
+    "name": "Timeout",
+    "description": "Terminates game when time limit is reached.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "number",
+          "description": "Time limit for the game."
+        },
+        "win": {
+          "type": "boolean",
+          "description": "Indicates if the player wins."
+        }
+      },
+      "required": ["limit", "win"]
+    }
+  }
+}

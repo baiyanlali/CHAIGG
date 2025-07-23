@@ -1,0 +1,83 @@
+{
+  "ContinuousPhysics": {
+    "name": "ContinuousPhysics",
+    "description": "Physics with continuous movement and forces",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "gravity": {
+          "type": "number",
+          "description": "Vertical force on sprites"
+        },
+        "friction": {
+          "type": "number",
+          "description": "Resistance affect on sprite movement"
+        }
+      },
+      "required": ["gravity", "friction"]
+    }
+  },
+  "GravityPhysics": {
+    "name": "GravityPhysics",
+    "description": "Applies gravity to object movements.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "gravity": {
+          "type": "float",
+          "description": "Gravitational force applied."
+        }
+      },
+      "required": ["gravity"]
+    }
+  },
+  "GridPhysics": {
+    "name": "GridPhysics",
+    "description": "Handles sprite movements on a grid.",
+    "parameters": { "type": "object", "properties": {}, "required": [] }
+  },
+  "NoFrictionPhysics": {
+    "name": "NoFrictionPhysics",
+    "description": "Physics with no friction applied to entities.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "friction": {
+          "type": "number",
+          "description": "frictional force value, always 0.0"
+        }
+      },
+      "required": ["friction"]
+    }
+  },
+  "distance": {
+    "name": "distance",
+    "description": "Calculates Euclidean distance between two entities.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "r1": {
+          "type": "object",
+          "description": "First entity with coordinates"
+        },
+        "r2": {
+          "type": "object",
+          "description": "Second entity with coordinates"
+        }
+      },
+      "required": ["r1", "r2"]
+    }
+  },
+  "quickDistance": {
+    "name": "quickDistance",
+    "description": "Calculates squared distance between two points.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "r1": { "type": "object", "description": "First object with location" },
+        "r2": { "type": "object", "description": "Second object with location" }
+      },
+      "required": ["r1", "r2"]
+    }
+  }
+}

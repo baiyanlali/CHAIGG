@@ -1,0 +1,6 @@
+Please write a game described below. In the game there is player, goal and walls. 
+When player hit the walls, player will step back. 
+When player hit the goal, goal will be removed. 
+When the count of goal equals to 0, the player will win. 
+There is no lose condition. 
+Please note that the walls need to form a maze.

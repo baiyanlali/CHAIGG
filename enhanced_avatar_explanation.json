@@ -1,0 +1,146 @@
+{
+  "Avatar": {
+    "name": "Avatar",
+    "description": "Game character controlled by player, performs actions.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "pos": {
+          "type": "array",
+          "description": "Position of the avatar in grid."
+        },
+        "size": {
+          "type": "array",
+          "description": "Size of the avatar in grid units."
+        },
+        "actions": {
+          "type": "array",
+          "description": "List of possible actions."
+        }
+      },
+      "required": ["pos", "size"]
+    }
+  },
+  "FlakAvatar": {
+    "name": "FlakAvatar",
+    "description": "Horizontal avatar that shoots with SPACE key.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "color": { "type": "string", "description": "avatar's color" }
+      },
+      "required": ["color"]
+    }
+  },
+  "HorizontalAvatar": {
+    "name": "HorizontalAvatar",
+    "description": "An avatar that moves horizontally.",
+    "parameters": { "type": "object", "properties": {}, "required": [] }
+  },
+  "MissileAvatar": {
+    "name": "MissileAvatar",
+    "description": "Oriented avatar that moves with speed 1.",
+    "parameters": { "type": "object", "properties": {}, "required": [] }
+  },
+  "MovingAvatar": {
+    "name": "MovingAvatar",
+    "description": "A controllable avatar that can move in four directions.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "color": { "type": "string", "description": "Color of the avatar." }
+      },
+      "required": ["color"]
+    }
+  },
+  "NoisyRotatingFlippingAvatar": {
+    "name": "NoisyRotatingFlippingAvatar",
+    "description": "Avatar that rotates, flips, and emits noise",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "noiseLevel": {
+          "type": "number",
+          "description": "Intensity of emitted noise"
+        }
+      },
+      "required": ["noiseLevel"]
+    }
+  },
+  "OngoingShootAvatar": {
+    "name": "OngoingShootAvatar",
+    "description": "Avatar that continuously shoots with movement.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "param1": {
+          "type": "string",
+          "description": "Parameter details undetermined"
+        }
+      },
+      "required": []
+    }
+  },
+  "OrientedAvatar": {
+    "name": "OrientedAvatar",
+    "description": "An avatar with a specific orientation and movement",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "draw_arrow": {
+          "type": "boolean",
+          "description": "Whether to draw arrow"
+        }
+      },
+      "required": ["draw_arrow"]
+    }
+  },
+  "RotatingAvatar": {
+    "name": "RotatingAvatar",
+    "description": "An avatar that rotates and moves.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "draw_arrow": {
+          "type": "boolean",
+          "description": "Displays an arrow on avatar."
+        }
+      },
+      "required": ["draw_arrow"]
+    }
+  },
+  "RotatingFlippingAvatar": {
+    "name": "RotatingFlippingAvatar",
+    "description": "An avatar that rotates and flips based on input.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "noiseLevel": {
+          "type": "number",
+          "description": "Adds random noise to actions."
+        }
+      },
+      "required": ["noiseLevel"]
+    }
+  },
+  "ShootAvatar": {
+    "name": "ShootAvatar",
+    "description": "An oriented avatar that can shoot projectiles.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "ammo": { "type": "string", "description": "Type of ammo used." },
+        "stype": {
+          "type": "string",
+          "description": "Specified projectile type."
+        }
+      },
+      "required": ["ammo", "stype"]
+    }
+  },
+  "VerticalAvatar": {
+    "name": "VerticalAvatar",
+    "description": "Avatar moving vertically, only up and down.",
+    "parameters": { "type": "object", "properties": {}, "required": [] }
+  }
+}

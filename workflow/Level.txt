@@ -1,0 +1,31 @@
+Please refer this video game description language file and make corresponding level for it.
+
+{vgdl}
+
+The level should is ascii based map. Please return in following foramt:
+
+```level
+YOUR LEVEL
+```
+
+
+Here is an example and explanation:
+
+```level
+WWWWWWWW
+WPH C  W
+W  C   W
+W   C  W
+W  H   W
+WWWWWWWW
+```
+
+Explanation:
+
+- `W`: Represents walls surrounding the level to confine the playing area.
+- `P`: The player starts near the top-left corner for easier initial movement.
+- `C`: Represents crates that can be pushed by the player into holes.
+- `H`: Represents holes that can "consume" crates to win the game.
+- The level is designed such that the player must strategically push the crates into the holes to satisfy the winning condition specified (`limit=0` crates left). 
+
+This level layout creates a simple map for the player to interact with based on the described VGDL logic and termination conditions. Adjustments can be made to increase the complexity or to better match specific game mechanics.

@@ -1,0 +1,29 @@
+{
+  "Resource": {
+    "name": "Resource",
+    "description": "A VGDL sprite representing a resource.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "value": { "type": "number", "description": "Amount of resource." },
+        "res_type": { "type": "string", "description": "Type of resource." },
+        "limit": { "type": "number", "description": "Resource upper limit." }
+      },
+      "required": ["value", "res_type", "limit"]
+    }
+  },
+  "ResourcePack": {
+    "name": "ResourcePack",
+    "description": "A pack providing resources in a game.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "is_static": {
+          "type": "boolean",
+          "description": "Determines if the resource can't move."
+        }
+      },
+      "required": ["is_static"]
+    }
+  }
+}

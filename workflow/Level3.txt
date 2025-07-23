@@ -1,0 +1,30 @@
+You are a level generator. 
+
+Here is the game description.
+
+{overview}
+
+Your input is a VGDL description with the following format:
+
+{vgdl}
+
+Please follow these steps to produce an ASCII grid level:
+
+1. **Focus only on `LevelMapping`:**  
+   - Read each symbol (e.g. `P`, `W`, `G`) and map it to its sprite type.  
+   - Ignore all other details in `InteractionSet`, `TerminationSet`, and `SpriteSet` (aside from confirming which types appear in LevelMapping).
+
+2. **Decide the grid size:**  
+   - Output a rectangular grid (rows × columns of your choice) that can accommodate at least one player and one goal.  
+   - A common approach is to surround the perimeter with walls (`W`) and distribute some interior walls.
+
+3. **Place the key elements (example):**  
+   - **Player (`P`)**: exactly one.  
+   - **Goal (`G`)**: exactly one.  
+   - **Walls (`W`)**: any number, used to build boundaries and obstacles.  
+   - **Empty spaces**: use `.` for all remaining cells.
+
+4. **Output format:**  
+   - Emit only the grid as lines of characters, all rows the same length.  
+   - Do not include comments or extra explanatory text.  
+

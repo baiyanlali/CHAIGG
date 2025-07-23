@@ -1,0 +1,462 @@
+{
+  "AStarChaser": {
+    "name": "AStarChaser",
+    "description": "Chases target using A* algorithm.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "fleeing": {
+          "type": "boolean",
+          "description": "If true, moves away from target."
+        }
+      },
+      "required": []
+    }
+  },
+  "AlternateChaser": {
+    "name": "AlternateChaser",
+    "description": "Chases or flees based on target assessment.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "stype1": {
+          "type": "string",
+          "description": "Comma-separated first target types."
+        },
+        "stype2": {
+          "type": "string",
+          "description": "Comma-separated second target types."
+        }
+      },
+      "required": ["stype1", "stype2"]
+    }
+  },
+  "Bomber": {
+    "name": "Bomber",
+    "description": "A missile that periodically spawns other sprites.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "color": { "type": "string", "description": "Color of the bomber." },
+        "is_static": {
+          "type": "boolean",
+          "description": "Whether the bomber is static."
+        },
+        "prob": {
+          "type": "number",
+          "description": "Probability of spawning a sprite."
+        },
+        "cooldown": {
+          "type": "number",
+          "description": "Cooldown period for spawning."
+        },
+        "total": {
+          "type": "number",
+          "description": "Total spawns before self-destruction."
+        },
+        "stype": { "type": "string", "description": "Type of sprite to spawn." }
+      },
+      "required": ["stype"]
+    }
+  },
+  "BomberRandomMissile": {
+    "name": "BomberRandomMissile",
+    "description": "Spawns missiles of random types",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "stypeMissile": {
+          "type": "string",
+          "description": "Comma-separated missile types"
+        }
+      },
+      "required": ["stypeMissile"]
+    }
+  },
+  "Chaser": {
+    "name": "Chaser",
+    "description": "Speeds toward nearest target, occasionally in a random direction.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "portal": {
+          "type": "boolean",
+          "description": "indicates portal behavior, default is true"
+        },
+        "stype": {
+          "type": "string",
+          "description": "target sprite type to chase"
+        }
+      },
+      "required": ["stype"]
+    }
+  },
+  "Conveyer": {
+    "name": "Conveyer",
+    "description": "Static sprite that moves entities in a direction",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "strength": {
+          "type": "number",
+          "description": "Force applied to moved entities"
+        },
+        "draw_arrow": {
+          "type": "boolean",
+          "description": "Toggle arrow display on sprite"
+        }
+      },
+      "required": ["strength", "draw_arrow"]
+    }
+  },
+  "Door": {
+    "name": "Door",
+    "description": "An immovable door that may act as a portal.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "portal": {
+          "type": "boolean",
+          "description": "indicates if door is portal"
+        }
+      },
+      "required": ["portal"]
+    }
+  },
+  "EOS": {
+    "name": "EOS",
+    "description": "End of Sprite (EOS)",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "ID": {
+          "type": "integer",
+          "description": "unique identifier of the sprite"
+        }
+      },
+      "required": ["ID"]
+    }
+  },
+  "EraticMissile": {
+    "name": "EraticMissile",
+    "description": "A missile with erratic movement based on probability.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "prob": {
+          "type": "number",
+          "description": "Chance to change direction."
+        }
+      },
+      "required": ["prob"]
+    }
+  },
+  "Fleeing": {
+    "name": "Fleeing",
+    "description": "Sprite that flees from a certain entity.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "portal": {
+          "type": "boolean",
+          "description": "Determines if portals are used."
+        },
+        "stype": {
+          "type": "string",
+          "description": "Type of entity to flee from."
+        }
+      },
+      "required": ["portal", "stype"]
+    }
+  },
+  "Flicker": {
+    "name": "Flicker",
+    "description": "Sprite that disappears after a set time limit.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "color": { "type": "string", "description": "Color of the sprite" },
+        "limit": {
+          "type": "integer",
+          "description": "Time limit before disappearance"
+        }
+      },
+      "required": ["limit"]
+    }
+  },
+  "Immovable": {
+    "name": "Immovable",
+    "description": "A sprite that doesn't move.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "color": { "type": "string", "description": "The color of the sprite" },
+        "is_static": {
+          "type": "boolean",
+          "description": "Determines if sprite is static"
+        }
+      },
+      "required": []
+    }
+  },
+  "Missile": {
+    "name": "Missile",
+    "description": "A sprite with oriented movement capability.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "speed": {
+          "type": "number",
+          "description": "Movement speed of the sprite."
+        }
+      },
+      "required": ["speed"]
+    }
+  },
+  "OrientedFlicker": {
+    "name": "OrientedFlicker",
+    "description": "Oriented sprite that flickers and disappears.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "number",
+          "description": "Flicker duration in frames."
+        }
+      },
+      "required": ["limit"]
+    }
+  },
+  "OrientedSprite": {
+    "name": "OrientedSprite",
+    "description": "Sprite with specific orientation capability.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "orientation": {
+          "type": "string",
+          "description": "Initial direction of the sprite."
+        }
+      },
+      "required": ["orientation"]
+    }
+  },
+  "Passive": {
+    "name": "Passive",
+    "description": "Non-interactive VGDL sprite",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "color": { "type": "string", "description": "The color of the sprite" }
+      },
+      "required": ["color"]
+    }
+  },
+  "PathAltChaser": {
+    "name": "PathAltChaser",
+    "description": "Chases targets along alternate paths",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "param1": {
+          "type": "string",
+          "description": "potential parameter explanation"
+        },
+        "param2": {
+          "type": "number",
+          "description": "potential parameter explanation"
+        }
+      },
+      "required": ["param1", "param2"]
+    }
+  },
+  "Portal": {
+    "name": "Portal",
+    "description": "Static sprite creating other sprites when conditions met.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "pos": { "type": "array", "description": "Position of the portal." },
+        "size": { "type": "array", "description": "Size of the portal." },
+        "args": {
+          "type": "object",
+          "description": "Additional arguments for portal behavior."
+        }
+      },
+      "required": ["pos", "size", "args"]
+    }
+  },
+  "RandomInertial": {
+    "name": "RandomInertial",
+    "description": "Sprite with random inertial movement",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "pos": {
+          "type": "array",
+          "description": "Initial position coordinates"
+        },
+        "size": { "type": "array", "description": "Size of the sprite" },
+        "args": {
+          "type": "object",
+          "description": "Additional arguments for sprite"
+        }
+      },
+      "required": ["pos", "size", "args"]
+    }
+  },
+  "RandomMissile": {
+    "name": "RandomMissile",
+    "description": "Missile with trajectory direction chosen randomly.",
+    "parameters": { "type": "object", "properties": {}, "required": [] }
+  },
+  "RandomNPC": {
+    "name": "RandomNPC",
+    "description": "A non-player character with random movement",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "speed": {
+          "type": "number",
+          "description": "movement speed of the sprite"
+        },
+        "is_stochastic": {
+          "type": "boolean",
+          "description": "indicates random behavior"
+        }
+      },
+      "required": ["speed", "is_stochastic"]
+    }
+  },
+  "SpawnPoint": {
+    "name": "SpawnPoint",
+    "description": "Generates sprites based on cooldown and probability.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "cooldown": {
+          "type": "number",
+          "description": "Time intervals between spawns."
+        },
+        "prob": {
+          "type": "number",
+          "description": "Probability of spawning each interval."
+        },
+        "total": {
+          "type": "number",
+          "description": "Maximum number of spawns allowed."
+        },
+        "stype": {
+          "type": "string",
+          "description": "Type of the sprite to spawn."
+        },
+        "color": {
+          "type": "string",
+          "description": "Color of the spawn point."
+        }
+      },
+      "required": ["cooldown", "stype"]
+    }
+  },
+  "SpriteProducer": {
+    "name": "SpriteProducer",
+    "description": "Produces sprites based on defined parameters.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "spriteType": {
+          "type": "string",
+          "description": "Type of sprite to produce"
+        },
+        "frequency": {
+          "type": "number",
+          "description": "Frequency of sprite production"
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of sprites"
+        }
+      },
+      "required": ["spriteType", "frequency", "limit"]
+    }
+  },
+  "Switch": {
+    "name": "Switch",
+    "description": "Orientable sprite with active states",
+    "parameters": { "type": "object", "properties": {}, "required": [] }
+  },
+  "VGDLSprite": {
+    "name": "VGDLSprite",
+    "description": "A basic VGDL game sprite with various attributes.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "key": { "type": "string", "description": "name of the sprite" },
+        "physicstype": {
+          "type": "object",
+          "description": "physics type for this sprite"
+        },
+        "speed": { "type": "number", "description": "speed of the sprite" },
+        "cooldown": {
+          "type": "number",
+          "description": "cooldown period for actions"
+        },
+        "color": { "type": "string", "description": "color of the sprite" },
+        "image": { "type": "string", "description": "image for the sprite" },
+        "healthPoints": {
+          "type": "number",
+          "description": "current health points"
+        },
+        "limitHealthPoints": {
+          "type": "number",
+          "description": "maximum limit for health points"
+        },
+        "maxHealthPoints": {
+          "type": "number",
+          "description": "max initial health points"
+        }
+      },
+      "required": [
+        "key",
+        "physicstype",
+        "speed",
+        "cooldown",
+        "color",
+        "image",
+        "healthPoints",
+        "limitHealthPoints",
+        "maxHealthPoints"
+      ]
+    }
+  },
+  "WalkJumper": {
+    "name": "WalkJumper",
+    "description": "Moves horizontally and occasionally jumps up",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "prob": { "type": "number", "description": "probability of jumping" },
+        "strength": { "type": "number", "description": "jumping strength" }
+      },
+      "required": ["prob", "strength"]
+    }
+  },
+  "Walker": {
+    "name": "Walker",
+    "description": "A missile with specific air steering properties.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "airsteering": {
+          "type": "boolean",
+          "description": "Enables air steering."
+        },
+        "is_stochastic": {
+          "type": "boolean",
+          "description": "Enables stochastic movement."
+        }
+      },
+      "required": ["airsteering", "is_stochastic"]
+    }
+  }
+}

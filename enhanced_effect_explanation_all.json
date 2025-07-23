@@ -1,0 +1,861 @@
+{
+  "addHealthPoints": {
+    "name": "addHealthPoints",
+    "description": "Increases the sprite's health points.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "number",
+          "description": "Amount to add to health points."
+        },
+        "limitHealthPoints": {
+          "type": "number",
+          "description": "Upper bound for health point increment."
+        },
+        "maxHealthPoints": {
+          "type": "number",
+          "description": "Maximum health points the sprite can have."
+        }
+      },
+      "required": ["value", "limitHealthPoints", "maxHealthPoints"]
+    }
+  },
+  "addHealthPointsToMax": {
+    "name": "addHealthPointsToMax",
+    "description": "Increase sprite's health, update max if exceeded limit.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "value": { "type": "number", "description": "points to add to health" }
+      },
+      "required": ["value"]
+    }
+  },
+  "align": {
+    "name": "align",
+    "description": "Aligns sprite to partner's location and orientation.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "orient": {
+          "type": "object",
+          "description": "Optional. Orientation data to align sprite."
+        }
+      },
+      "required": []
+    }
+  },
+  "attractGaze": {
+    "name": "attractGaze",
+    "description": "Aligns sprite orientation with partner's orientation based on probability",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "prob": {
+          "type": "number",
+          "description": "probability of aligning orientations"
+        }
+      },
+      "required": ["prob"]
+    }
+  },
+  "bounceDirection": {
+    "name": "bounceDirection",
+    "description": "Alters sprite's speed and direction upon collision",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "friction": {
+          "type": "number",
+          "description": "Reduction of speed upon bounce"
+        }
+      },
+      "required": []
+    }
+  },
+  "bounceForward": {
+    "name": "bounceForward",
+    "description": "Moves sprite forward based on partner's direction and speed.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "sprite": { "type": "object", "description": "The sprite to be moved" },
+        "partner": {
+          "type": "object",
+          "description": "The sprite whose direction and speed are used"
+        },
+        "game": {
+          "type": "object",
+          "description": "The game instance managing the collision"
+        },
+        "kwargs": {
+          "type": "object",
+          "description": "Additional keyword arguments, usually empty"
+        }
+      },
+      "required": ["sprite", "partner", "game", "kwargs"]
+    }
+  },
+  "changeResource": {
+    "name": "changeResource",
+    "description": "Alters a sprite's resource value.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "resource": {
+          "type": "string",
+          "description": "The resource to be changed."
+        },
+        "value": {
+          "type": "number",
+          "description": "Amount to change the resource."
+        },
+        "killResource": {
+          "type": "boolean",
+          "description": "Whether to kill the partner sprite."
+        }
+      },
+      "required": ["resource"]
+    }
+  },
+  "changeScore": {
+    "name": "changeScore",
+    "description": "Modifies the score of the game",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "score": {
+          "type": "number",
+          "description": "amount to change the score"
+        },
+        "value": {
+          "type": "number",
+          "description": "amount to change if score absent"
+        }
+      },
+      "required": ["score", "value"]
+    }
+  },
+  "cloneSprite": {
+    "name": "cloneSprite",
+    "description": "Creates a clone of the given sprite.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "sprite": { "type": "object", "description": "The sprite to clone." },
+        "partner": {
+          "type": "object",
+          "description": "Partner sprite involved in interaction."
+        },
+        "game": {
+          "type": "object",
+          "description": "Game context for sprite creation."
+        },
+        "kwargs": {
+          "type": "object",
+          "description": "Additional keyword arguments."
+        }
+      },
+      "required": ["sprite", "partner", "game", "kwargs"]
+    }
+  },
+  "collectResource": {
+    "name": "collectResource",
+    "description": "Collect a resource and update resources of partner.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "resource_type": {
+          "type": "string",
+          "description": "Type of resource being collected."
+        },
+        "resource_value": {
+          "type": "number",
+          "description": "Value of the resource being collected."
+        },
+        "resource_limit": {
+          "type": "number",
+          "description": "Maximum limit of the resource."
+        }
+      },
+      "required": ["resource_type", "resource_value", "resource_limit"]
+    }
+  },
+  "conveySprite": {
+    "name": "conveySprite",
+    "description": "Moves sprite based on partner's orientation and strength",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "sprite": { "type": "object", "description": "the sprite being moved" },
+        "partner": {
+          "type": "object",
+          "description": "the partner providing movement direction and strength"
+        },
+        "game": {
+          "type": "object",
+          "description": "reference to the current game state"
+        },
+        "kwargs": {
+          "type": "object",
+          "description": "Additional arguments as dictionary"
+        }
+      },
+      "required": ["sprite", "partner", "game", "kwargs"]
+    }
+  },
+  "getColor": {
+    "name": "getColor",
+    "description": "Retrieves the color of a sprite.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "sprite": {
+          "type": "object",
+          "description": "The sprite whose color is retrieved."
+        }
+      },
+      "required": ["sprite"]
+    }
+  },
+  "killAll": {
+    "name": "killAll",
+    "description": "Eliminates all sprites of a specific type",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "stype": {
+          "type": "string",
+          "description": "type of sprites to eliminate"
+        }
+      },
+      "required": ["stype"]
+    }
+  },
+  "killBoth": {
+    "name": "killBoth",
+    "description": "Eliminates both interacting game sprites.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "sprite": {
+          "type": "object",
+          "description": "The first interacting sprite."
+        },
+        "partner": {
+          "type": "object",
+          "description": "The second interacting sprite."
+        },
+        "game": {
+          "type": "object",
+          "description": "The current game instance."
+        },
+        "kwargs": {
+          "type": "object",
+          "description": "Additional parameters in dictionary."
+        }
+      },
+      "required": ["sprite", "partner", "game", "kwargs"]
+    }
+  },
+  "killIfAlive": {
+    "name": "killIfAlive",
+    "description": "Conditionally kills a sprite if partner isn't being killed.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "sprite": {
+          "type": "any",
+          "description": "The sprite to potentially kill."
+        },
+        "partner": {
+          "type": "any",
+          "description": "The partnering sprite to check."
+        },
+        "game": {
+          "type": "object",
+          "description": "The game instance containing state."
+        }
+      },
+      "required": ["sprite", "partner", "game"]
+    }
+  },
+  "killIfFromAbove": {
+    "name": "killIfFromAbove",
+    "description": "Kills sprite if it falls on partner from above",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "sprite": {
+          "type": "object",
+          "description": "The sprite triggering the effect"
+        },
+        "partner": {
+          "type": "object",
+          "description": "The sprite being collided with"
+        },
+        "game": { "type": "object", "description": "The current game state" },
+        "kwargs": {
+          "type": "object",
+          "description": "Additional parameters for customization"
+        }
+      },
+      "required": ["sprite", "partner", "game", "kwargs"]
+    }
+  },
+  "killIfFrontal": {
+    "name": "killIfFrontal",
+    "description": "Kills sprite if facing opposite direction to partner",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "sprite": { "type": "object", "description": "the primary sprite" },
+        "partner": { "type": "object", "description": "the secondary sprite" },
+        "game": { "type": "object", "description": "the game state object" },
+        "kwargs": { "type": "object", "description": "additional parameters" }
+      },
+      "required": ["sprite", "partner", "game", "kwargs"]
+    }
+  },
+  "killIfHasLess": {
+    "name": "killIfHasLess",
+    "description": "Kills sprite if its resources are below given limit.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "resource": {
+          "type": "string",
+          "description": "type of resource to check"
+        },
+        "limit": {
+          "type": "number",
+          "description": "maximum allowed resource amount"
+        }
+      },
+      "required": ["resource", "limit"]
+    }
+  },
+  "killIfHasMore": {
+    "name": "killIfHasMore",
+    "description": "Kills sprite if it has more resources than limit",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer",
+          "description": "Resource limit to check against"
+        },
+        "resource": {
+          "type": "string",
+          "description": "Specific resource type to evaluate"
+        }
+      },
+      "required": ["limit", "resource"]
+    }
+  },
+  "killIfNotFrontal": {
+    "name": "killIfNotFrontal",
+    "description": "Kills a sprite if not directly frontal.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "kwargs": {
+          "type": "object",
+          "description": "additional arguments for the effect"
+        }
+      },
+      "required": ["kwargs"]
+    }
+  },
+  "killIfOtherHasMore": {
+    "name": "killIfOtherHasMore",
+    "description": "Kills sprite if partner's resource exceeds limit",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "resource": {
+          "type": "string",
+          "description": "Resource type to check"
+        },
+        "limit": {
+          "type": "number",
+          "description": "Threshold for partner's resource"
+        }
+      },
+      "required": ["resource", "limit"]
+    }
+  },
+  "killIfSlow": {
+    "name": "killIfSlow",
+    "description": "Kills the sprite if relative speed is below limit.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "limitspeed": { "type": "number", "description": "The speed threshold" }
+      },
+      "required": ["limitspeed"]
+    }
+  },
+  "killSprite": {
+    "name": "killSprite",
+    "description": "Adds sprite to the game's kill list.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "sprite": {
+          "type": "object",
+          "description": "The sprite to be killed."
+        },
+        "partner": {
+          "type": "object",
+          "description": "Optional sprite in interaction."
+        },
+        "game": { "type": "object", "description": "Current game instance." }
+      },
+      "required": ["sprite", "game"]
+    }
+  },
+  "kill_effects": {
+    "name": "kill_effects",
+    "description": "Defines kill conditions and transformations for sprites.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "limitspeed": {
+          "type": "number",
+          "description": "Speed threshold for killIfSlow"
+        },
+        "stype": {
+          "type": "string",
+          "description": "Target sprite type for transformations"
+        },
+        "forceOrientation": {
+          "type": "boolean",
+          "description": "Force orientation copy during transform"
+        },
+        "killSecond": {
+          "type": "boolean",
+          "description": "Kill partner sprite optionally"
+        },
+        "stypeTo": {
+          "type": "string",
+          "description": "New type for transformToAll"
+        },
+        "resource": {
+          "type": "string",
+          "description": "Resource type for resource-based kills"
+        },
+        "limit": {
+          "type": "number",
+          "description": "Resource limit for resource-based kills"
+        }
+      },
+      "required": [
+        "limitspeed",
+        "stype",
+        "forceOrientation",
+        "killSecond",
+        "stypeTo",
+        "resource",
+        "limit"
+      ]
+    }
+  },
+  "nothing": {
+    "name": "nothing",
+    "description": "No effect is applied between sprites.",
+    "parameters": { "type": "object", "properties": {}, "required": [] }
+  },
+  "pullWithIt": {
+    "name": "pullWithIt",
+    "description": "Pulls sprite with the partner's motion and speed.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "sprite": { "type": "object", "description": "Sprite being pulled." },
+        "partner": {
+          "type": "object",
+          "description": "Sprite that pulls the other."
+        },
+        "game": { "type": "object", "description": "Current game state." },
+        "kwargs": {
+          "type": "object",
+          "description": "Additional parameters for effect."
+        }
+      },
+      "required": ["sprite", "partner", "game", "kwargs"]
+    }
+  },
+  "removeSprite": {
+    "name": "removeSprite",
+    "description": "Removes a sprite from the game.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "sprite": {
+          "type": "string or object",
+          "description": "The main sprite to remove"
+        },
+        "partner": {
+          "type": "string or object",
+          "description": "The partner sprite to remove"
+        },
+        "game": { "type": "object", "description": "The game state object" },
+        "kwargs": {
+          "type": "object",
+          "description": "Additional keyword arguments"
+        }
+      },
+      "required": ["sprite", "partner", "game", "kwargs"]
+    }
+  },
+  "reverseDirection": {
+    "name": "reverseDirection",
+    "description": "Reverses the direction of a sprite.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "sprite": {
+          "type": "object",
+          "description": "The sprite affected by reverseDirection."
+        },
+        "partner": {
+          "type": "object",
+          "description": "The partner sprite involved, if any."
+        },
+        "game": {
+          "type": "object",
+          "description": "Current game state when effect is applied."
+        },
+        "kwargs": {
+          "type": "object",
+          "description": "Additional parameters for the effect."
+        }
+      },
+      "required": ["sprite", "partner", "game", "kwargs"]
+    }
+  },
+  "scoreChange": {
+    "name": "scoreChange",
+    "description": "Increases game's score by specified value.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "score": {
+          "type": "integer",
+          "description": "points to add to game score"
+        },
+        "value": {
+          "type": "integer",
+          "description": "alternative points if score is missing"
+        }
+      },
+      "required": ["score", "value"]
+    }
+  },
+  "setSpeedForAll": {
+    "name": "setSpeedForAll",
+    "description": "Sets speed for all sprites of a specified type.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "value": { "type": "number", "description": "Speed value to be set." },
+        "stype": {
+          "type": "string",
+          "description": "Type of sprites to change."
+        }
+      },
+      "required": ["stype"]
+    }
+  },
+  "shieldFrom": {
+    "name": "shieldFrom",
+    "description": "Provides a shield to a sprite from a specific type.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "stype": { "type": "string", "description": "type of the shield" },
+        "ftype": { "type": "string", "description": "type to shield from" }
+      },
+      "required": ["stype", "ftype"]
+    }
+  },
+  "slipForward": {
+    "name": "slipForward",
+    "description": "Chance to slide the sprite forward.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "prob": {
+          "type": "number",
+          "description": "The probability of slipping forward."
+        }
+      },
+      "required": ["prob"]
+    }
+  },
+  "spawn": {
+    "name": "spawn",
+    "description": "Creates a new sprite at the current location.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "stype": { "type": "string", "description": "Type of sprite to spawn." }
+      },
+      "required": ["stype"]
+    }
+  },
+  "spawnIfHasLess": {
+    "name": "spawnIfHasLess",
+    "description": "Spawns a sprite if resource is below a limit.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "resource": { "type": "string", "description": "Resource to check" },
+        "stype": { "type": "string", "description": "Sprite type to spawn" },
+        "limit": { "type": "integer", "description": "Resource amount limit" }
+      },
+      "required": ["resource", "stype"]
+    }
+  },
+  "spawnIfHasMore": {
+    "name": "spawnIfHasMore",
+    "description": "Spawns a sprite if resource exceeds or equals a limit.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "resource": {
+          "type": "string",
+          "description": "Resource name to check against."
+        },
+        "stype": {
+          "type": "string",
+          "description": "Type of sprite to spawn."
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Minimum resource amount to spawn."
+        }
+      },
+      "required": ["resource", "stype"]
+    }
+  },
+  "stepBack": {
+    "name": "stepBack",
+    "description": "Move sprite to its last location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "sprite": {
+          "type": "object",
+          "description": "The sprite to move back"
+        },
+        "partner": { "type": "object", "description": "The sprite's partner" },
+        "game": { "type": "object", "description": "The current game state" },
+        "kwargs": { "type": "object", "description": "Additional arguments" }
+      },
+      "required": ["sprite", "partner", "game", "kwargs"]
+    }
+  },
+  "stochastic_effects": {
+    "name": "stochastic_effects",
+    "description": "Effects triggered with some probability.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "prob": {
+          "type": "number",
+          "description": "probability of effect activation"
+        }
+      },
+      "required": ["prob"]
+    }
+  },
+  "subtractHealthPoints": {
+    "name": "subtractHealthPoints",
+    "description": "Reduces health points of targeted sprites",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "number",
+          "description": "Health points to subtract"
+        },
+        "stype": {
+          "type": "string",
+          "description": "Type of sprites to target"
+        },
+        "limit": {
+          "type": "number",
+          "description": "Minimum health to avoid death"
+        }
+      },
+      "required": ["value"]
+    }
+  },
+  "teleportToExit": {
+    "name": "teleportToExit",
+    "description": "Instantly moves sprite to a random exit point.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "stype": {
+          "type": "string",
+          "description": "type of sprite to teleport to"
+        }
+      },
+      "required": ["stype"]
+    }
+  },
+  "transformTo": {
+    "name": "transformTo",
+    "description": "Transforms sprite to specified type",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "stype": { "type": "string", "description": "type to transform into" },
+        "forceOrientation": {
+          "type": "boolean",
+          "description": "retain orientation of the sprite"
+        },
+        "killSecond": {
+          "type": "boolean",
+          "description": "destroy partner after transformation"
+        }
+      },
+      "required": ["stype"]
+    }
+  },
+  "transformToAll": {
+    "name": "transformToAll",
+    "description": "Transforms all sprites of specified type.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "stype": {
+          "type": "string",
+          "description": "Type of sprites to transform."
+        },
+        "stypeTo": {
+          "type": "string",
+          "description": "Type to transform sprites into."
+        }
+      },
+      "required": ["stype", "stypeTo"]
+    }
+  },
+  "transformToRandomChild": {
+    "name": "transformToRandomChild",
+    "description": "Transforms sprite to a random child type.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "stype": {
+          "type": "string",
+          "description": "parent type to get subtypes from"
+        }
+      },
+      "required": ["stype"]
+    }
+  },
+  "turnAround": {
+    "name": "turnAround",
+    "description": "Reverses the movement direction of a sprite.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "sprite": { "type": "object", "description": "The affected sprite" },
+        "partner": {
+          "type": "object",
+          "description": "Another involved sprite"
+        },
+        "game": {
+          "type": "object",
+          "description": "The current game instance"
+        },
+        "kwargs": {
+          "type": "object",
+          "description": "Additional optional parameters"
+        }
+      },
+      "required": ["sprite", "partner", "game", "kwargs"]
+    }
+  },
+  "undoAll": {
+    "name": "undoAll",
+    "description": "Reverts all sprites' positions except certain types.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "nontStype": {
+          "type": "string",
+          "description": "Comma-separated sprite types to exclude"
+        }
+      },
+      "required": ["nontStype"]
+    }
+  },
+  "wallBounce": {
+    "name": "wallBounce",
+    "description": "Handles sprite's bounce and friction against walls.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "friction": {
+          "type": "number",
+          "description": "Decreases sprite speed"
+        }
+      },
+      "required": []
+    }
+  },
+  "wallStop": {
+    "name": "wallStop",
+    "description": "Stops the sprite upon hitting a wall.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "friction": {
+          "type": "number",
+          "description": "Reduces sprite's orientation by friction."
+        }
+      },
+      "required": ["friction"]
+    }
+  },
+  "windGust": {
+    "name": "windGust",
+    "description": "Applies a directional push to a sprite.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "sprite": {
+          "type": "object",
+          "description": "The sprite being affected"
+        },
+        "partner": {
+          "type": "object",
+          "description": "The sprite causing the wind gust"
+        },
+        "game": { "type": "object", "description": "The game instance" },
+        "kwargs": { "type": "object", "description": "Additional arguments" }
+      },
+      "required": ["sprite", "partner", "game", "kwargs"]
+    }
+  },
+  "wrapAround": {
+    "name": "wrapAround",
+    "description": "Transports sprite to opposite edge when moving out of bounds.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "offset": {
+          "type": "number",
+          "description": "Offsets the wrapping position."
+        }
+      },
+      "required": []
+    }
+  }
+}

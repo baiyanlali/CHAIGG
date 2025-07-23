@@ -1,0 +1,5 @@
+I want to create a game where the player must eliminate all butterflies while protecting the cocoons.
+The player can move the avatar, avoid walls, and hunt butterflies.
+When player collides with butterflies, butterflies will die.
+Butterflies move randomly.
+When butterflies collides with cocoons, cocoons will disappear. Then butterflies will be cloned.

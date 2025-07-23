@@ -1,0 +1,11 @@
+{original_text}
+
+Please tell me when the game will  terminate, either the player wins or loses. Please do not output anything else.
+
+Please output in the following format:
+
+## Termination1:
+EndState: Win/Lose
+Entity: Which kind of entity is conditioned?
+Condition: Tell me the count of entity upon win or lose
+...

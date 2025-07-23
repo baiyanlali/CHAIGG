@@ -1,0 +1,38 @@
+{
+  "Conditional": {
+    "name": "Conditional",
+    "description": "Returns false when invoked",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "condition": {
+          "type": "function",
+          "description": "A function returning false"
+        }
+      },
+      "required": ["condition"]
+    }
+  },
+  "ConditionalModule": {
+    "name": "ConditionalModule",
+    "description": "Executes if specific conditions are met.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "key1": {
+          "type": "string",
+          "description": "description of key1 within 10 words"
+        },
+        "key2": {
+          "type": "string",
+          "description": "description of key2 within 10 words"
+        },
+        "key3": {
+          "type": "string",
+          "description": "description of key3 within 10 words"
+        }
+      },
+      "required": ["key1", "key2", "key3"]
+    }
+  }
+}

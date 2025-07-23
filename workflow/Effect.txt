@@ -1,0 +1,28 @@
+You are a game designer.
+
+Now given the game entities and the game rules, please match each rule using following types.
+
+# Entities
+
+{entities}
+
+# Rules
+
+{rules}
+
+Here is the game effect type.
+[{"name": "addHealthPoints", "description": "Increases the sprite's health points.", "parameters": {"type": "object", "properties": {"value": {"type": "number", "description": "Amount to add to health points."}}, "required": ["value"]}}, {"name": "bounceDirection", "description": "Alters sprite's speed and direction upon collision", "parameters": {"type": "object", "properties": {"friction": {"type": "number", "description": "Reduction of speed upon bounce"}}, "required": []}}, {"name": "bounceForward", "description": "Moves sprite forward based on partner's direction and speed.", "parameters": {"type": "object", "properties": {}, "required": []}}, {"name": "changeScore", "description": "Modifies the score of the game", "parameters": {"type": "object", "properties": {"value": {"type": "number", "description": "amount to change if score absent"}}, "required": ["value"]}}, {"name": "killAll", "description": "Eliminates all sprites of a specific type", "parameters": {"type": "object", "properties": {"stype": {"type": "string", "description": "type of sprites to eliminate"}}, "required": ["stype"]}}, {"name": "killSprite", "description": "Adds sprite to the game's kill list.", "parameters": {"type": "object", "properties": {}, "required": []}},  {"name": "killBoth", "description": "Eliminates both interacting game sprites.", "parameters": {"type": "object", "properties": {}, "required": []}}, {"name": "pullWithIt", "description": "Pulls sprite with the partner's motion and speed.", "parameters": {"type": "object", "properties": {}, "required": []}}, {"name": "spawn", "description": "Creates a new sprite at the current location.", "parameters": {"type": "object", "properties": {"stype": {"type": "string", "description": "Type of sprite to spawn."}}, "required": ["stype"]}}, {"name": "stepBack", "description": "Move sprite to its last location", "parameters": {"type": "object", "properties": {}, "required": []}}, {"name": "subtractHealthPoints", "description": "Reduces health points of targeted sprites", "parameters": {"type": "object", "properties": {"value": {"type": "number", "description": "Health points to subtract"}, "stype": {"type": "string", "description": "Type of sprites to target"}, "limit": {"type": "number", "description": "Minimum health to avoid death"}}, "required": ["value"]}}, {"name": "transformTo", "description": "Transforms sprite to specified type", "parameters": {"type": "object", "properties": {"stype": {"type": "string", "description": "type to transform into"}, "forceOrientation": {"type": "boolean", "description": "retain orientation of the sprite"}, "killSecond": {"type": "boolean", "description": "destroy partner after transformation"}}, "required": ["stype"]}}, {"name": "turnAround", "description": "Reverses the movement direction of a sprite.", "parameters": {"type": "object", "properties": {}, "required": []}}, {"name": "wrapAround", "description": "Transports sprite to opposite edge when moving out of bounds.", "parameters": {"type": "object", "properties": {"offset": {"type": "number", "description": "Offsets the wrapping position."}}, "required": []}}]
+Please return result using follow format:
+
+```json
+[
+  {
+    "source": "EntityName",
+    "target": "Entity2Name",
+    "who": "This affected entity",
+    "effect": "EffectName",
+    "arguments": "Output arguments in a JSON format",
+    "explain": "explanation"
+  },
+]
+```

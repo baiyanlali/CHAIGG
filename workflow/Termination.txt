@@ -1,0 +1,33 @@
+You are a game designer.
+
+Given the game entities and the description of this game, please match each termination using following types.
+
+# Entities
+
+{entities}
+
+# Rules
+
+{rules}
+
+# Termination Conditions
+
+{terminations}
+
+Here is the game termination type.
+[{"name": "SpriteCounter", "description": "Ends game based on sprite count and limit.", "parameters": {"type": "object", "properties": {"limit": {"type": "integer", "description": "maximum sprite count allowed."}, "stype": {"type": "string", "description": "type of sprite to count."}, "win": {"type": "boolean", "description": "true if reaching limit wins."}}, "required": ["limit", "stype", "win"]}}, {"name": "Timeout", "description": "Terminates game when time limit is reached.", "parameters": {"type": "object", "properties": {"limit": {"type": "number", "description": "Time limit for the game."}, "win": {"type": "boolean", "description": "Indicates if the player wins."}}, "required": ["limit", "win"]}}]
+Please return result using follow example format:
+
+```json
+[
+  {
+    "termination_id": "Termination1",
+    "termination": "SpriteCounter",
+    "target": "Player",
+    "value": "0",
+    "arguments": "{"limit": 0, "stype": "Player", "win": true}",
+    "explain": "explain why choose this termination"
+  },
+...
+]
+```

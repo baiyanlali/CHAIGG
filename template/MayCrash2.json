@@ -1,0 +1,137 @@
+{
+  "nodes": [
+    {
+      "type": "StringFormat",
+      "id": "StringFormat_1732277388369",
+      "data": {
+        "label": "",
+        "runflowGenerating": false,
+        "data": "Which one do you prefer? alibaba or Microsoft",
+        "string": "Which one do you prefer? {s1} or {s2}",
+        "dict": {
+          "s1": "alibaba",
+          "s2": "Microsoft"
+        }
+      },
+      "position": {
+        "x": 225,
+        "y": 240
+      },
+      "measured": {
+        "width": 300,
+        "height": 282
+      },
+      "selected": false
+    },
+    {
+      "type": "StringInput",
+      "id": "StringInput_1732277420734",
+      "data": {
+        "label": "",
+        "data": "alibaba",
+        "runflowGenerating": false
+      },
+      "position": {
+        "x": -225,
+        "y": 150
+      },
+      "measured": {
+        "width": 205,
+        "height": 113
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "type": "LLMNode",
+      "id": "LLMNode_1732277518089",
+      "data": {
+        "label": "",
+        "prompt": "Write the most succesful company you know, only one and do not output anything else",
+        "data": "Microsoft",
+        "runflowGenerating": false
+      },
+      "position": {
+        "x": -270,
+        "y": 315
+      },
+      "measured": {
+        "width": 400,
+        "height": 421
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "type": "LLMNode",
+      "id": "LLMNode_1732277611988",
+      "data": {
+        "label": "",
+        "prompt": "i'm thinking Which one do you prefer? alibaba or Hello! How can I assist you today? or Hello! How can I assist you today?",
+        "runflowGenerating": false,
+        "data": "It seems like you've mixed up a few thoughts. Could you clarify what you're asking? For instance, are you comparing the company Alibaba with a customer service greeting like \"Hello! How can I assist you today?\" If you provide more details, I'd be happy to help!"
+      },
+      "position": {
+        "x": 735,
+        "y": 225
+      },
+      "measured": {
+        "width": 400,
+        "height": 421
+      },
+      "selected": true,
+      "dragging": false
+    },
+    {
+      "type": "StringInput",
+      "id": "StringInput_1732277712793",
+      "data": {
+        "label": "",
+        "data": "Write the most succesful company you know, only one and do not output anything else",
+        "runflowGenerating": false
+      },
+      "position": {
+        "x": -570,
+        "y": 315
+      },
+      "measured": {
+        "width": 205,
+        "height": 113
+      },
+      "selected": false,
+      "dragging": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "StringInput_1732277420734",
+      "target": "StringFormat_1732277388369",
+      "targetHandle": "StringFormat_1732277388369_s1",
+      "id": "xy-edge__StringInput_1732277420734-StringFormat_1732277388369StringFormat_1732277388369_s1"
+    },
+    {
+      "source": "LLMNode_1732277518089",
+      "target": "StringFormat_1732277388369",
+      "targetHandle": "StringFormat_1732277388369_s2",
+      "id": "xy-edge__LLMNode_1732277518089-StringFormat_1732277388369StringFormat_1732277388369_s2"
+    },
+    {
+      "source": "StringInput_1732277712793",
+      "target": "LLMNode_1732277518089",
+      "targetHandle": "LLMNode_1732277518089_prompt_handle",
+      "id": "xy-edge__StringInput_1732277712793-LLMNode_1732277518089LLMNode_1732277518089_prompt_handle"
+    },
+    {
+      "source": "StringFormat_1732277388369",
+      "sourceHandle": "output",
+      "target": "LLMNode_1732277611988",
+      "targetHandle": "LLMNode_1732277611988_prompt_handle",
+      "id": "xy-edge__StringFormat_1732277388369output-LLMNode_1732277611988LLMNode_1732277611988_prompt_handle"
+    }
+  ],
+  "viewport": {
+    "x": 499.5228667191882,
+    "y": 58.835728553656324,
+    "zoom": 0.5456779625187204
+  }
+}

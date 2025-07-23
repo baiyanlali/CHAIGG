@@ -1,0 +1,84 @@
+You are a game designer. Your designed game has these entities:
+
+{entities}
+
+You need to choose a sprite type for each entity. Please do not repeat the same sprite. You can choose from here:
+
+Here is avatar type. Only player can choose avatar type.
+
+FlakAvatar: Horizontal avatar that shoots with SPACE key.
+
+HorizontalAvatar: An avatar that moves horizontally.
+
+MissileAvatar: Oriented avatar that moves with speed 1.
+
+MovingAvatar: A controllable avatar that can move in four directions.
+
+NoisyRotatingFlippingAvatar: Avatar that rotates, flips, and emits noise
+
+OngoingShootAvatar: Avatar that continuously shoots with movement.
+
+OrientedAvatar: An avatar with a specific orientation and movement
+
+RotatingAvatar: An avatar that rotates and moves.
+
+RotatingFlippingAvatar: An avatar that rotates and flips based on input.
+
+ShootAvatar: An oriented avatar that can shoot projectiles.
+
+VerticalAvatar: Avatar moving vertically, only up and down.
+
+Here is non-player type. All the entities except player can choose non-player type.
+
+AStarChaser: Chases target using A* algorithm.
+
+AlternateChaser: Chases or flees based on target assessment.
+
+Bomber: A missile that periodically spawns other sprites.
+
+BomberRandomMissile: Spawns missiles of random types
+
+Chaser: Speeds toward nearest target, occasionally in a random direction.
+
+Conveyer: Static sprite that moves entities in a direction
+
+Door: An immovable door that may act as a portal.
+
+Fleeing: Sprite that flees from a certain entity.
+
+Flicker: Sprite that disappears after a set time limit.
+
+Immovable: A sprite that doesn't move.
+
+Missile: A sprite with oriented movement capability.
+
+OrientedFlicker: Oriented sprite that flickers and disappears.
+
+OrientedSprite: Sprite with specific orientation capability.
+
+Passive: Non-interactive VGDL sprite
+
+PathAltChaser: Chases targets along alternate paths
+
+Portal: Static sprite creating other sprites when conditions met.
+
+RandomInertial: Sprite with random inertial movement
+
+RandomMissile: Missile with trajectory direction chosen randomly.
+
+RandomNPC: A non-player character with random movement
+
+SpawnPoint: Generates sprites based on cooldown and probability.
+
+SpriteProducer: Produces sprites based on defined parameters.
+
+Please make sure there is only ONE avatar types in this game.
+
+Please think step by step, and in the end output the type in JSON format like the example below:
+
+```json
+{
+"The Name of Entitiy": "Your Chosen Type",
+"The Name of Entity": "You Chosen Type"
+}
+```

@@ -1,0 +1,17 @@
+{instruction}
+
+You are a game designer and you are making a 2d grid based game.
+
+Please make this game as simple as possible. Do not add any additional features to the game.
+
+Please make a detailed description of this game.
+
+You need to include these parts of this game:
+Game Overview: 2-3 sentence to introduce this game.
+Game Obejctive: How to win the game or lose the game.  
+Game Entities: The game sprites used in this game. Explain each kind of sprite in detail. Mark player-controllable sprites as Player, others as Non-Player. If a sprite has multiple instances, you only need to present the generic form. Please remember Wall is a sprite as well.
+Game Rules: What will happen when sprites collide each other?  Please list all rules in detail.
+Game Ending Conditions: When will the game ends? When the game ends, will the player win or lose?
+
+Please do not output anything else.
+

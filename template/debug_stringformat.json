@@ -1,0 +1,24 @@
+{
+  "nodes": [
+    {
+      "type": "StringFormat",
+      "id": "2",
+      "position": { "x": 0, "y": 100 },
+      "data": {
+        "label": "2",
+        "runflowGenerating": false,
+        "data": "Debug for",
+        "string": "Debug for",
+        "dict": { "a": "", "b": "" }
+      },
+      "measured": { "width": 300, "height": 282 },
+      "selected": true
+    }
+  ],
+  "edges": [],
+  "viewport": {
+    "x": 480.34432268500177,
+    "y": 50.26707937506376,
+    "zoom": 0.8705505632961245
+  }
+}

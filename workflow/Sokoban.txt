@@ -1,0 +1,10 @@
+Please write a sokoban game. 
+Where there are a player, crates, holes and walls. 
+The player can move around in a 2d grid map. 
+When player collide wall, player will step back. 
+When player hits the crate, crate will bounce forward.  
+When crate hit hole, both hole and crate will disappear. 
+When crate hit the wall, crate will step back as well. 
+When all holes disappear, game will win. 
+There is no lose condition.
+

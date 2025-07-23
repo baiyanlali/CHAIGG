@@ -1,0 +1,172 @@
+{
+  "bounceDirection": {
+    "name": "bounceDirection",
+    "description": "Alters sprite's speed and direction upon collision",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "friction": {
+          "type": "number",
+          "description": "Reduction of speed upon bounce"
+        }
+      },
+      "required": []
+    }
+  },
+  "bounceForward": {
+    "name": "bounceForward",
+    "description": "Moves sprite forward based on partner's direction and speed.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "sprite": { "type": "object", "description": "The sprite to be moved" },
+        "partner": {
+          "type": "object",
+          "description": "The sprite whose direction and speed are used"
+        },
+        "game": {
+          "type": "object",
+          "description": "The game instance managing the collision"
+        },
+        "kwargs": {
+          "type": "object",
+          "description": "Additional keyword arguments, usually empty"
+        }
+      },
+      "required": ["sprite", "partner", "game", "kwargs"]
+    }
+  },
+  "killBoth": {
+    "name": "killBoth",
+    "description": "Eliminates both interacting game sprites.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "sprite": {
+          "type": "object",
+          "description": "The first interacting sprite."
+        },
+        "partner": {
+          "type": "object",
+          "description": "The second interacting sprite."
+        },
+        "game": {
+          "type": "object",
+          "description": "The current game instance."
+        },
+        "kwargs": {
+          "type": "object",
+          "description": "Additional parameters in dictionary."
+        }
+      },
+      "required": ["sprite", "partner", "game", "kwargs"]
+    }
+  },
+  "killSprite": {
+    "name": "killSprite",
+    "description": "Removes a sprite from the game.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "sprite": {
+          "type": "string or object",
+          "description": "The main sprite to remove"
+        },
+        "partner": {
+          "type": "string or object",
+          "description": "The partner sprite to remove"
+        },
+        "game": { "type": "object", "description": "The game state object" },
+        "kwargs": {
+          "type": "object",
+          "description": "Additional keyword arguments"
+        }
+      },
+      "required": ["sprite", "partner", "game", "kwargs"]
+    }
+  },
+  "spawn": {
+    "name": "spawn",
+    "description": "Creates a new sprite at the current location.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "stype": { "type": "string", "description": "Type of sprite to spawn." }
+      },
+      "required": ["stype"]
+    }
+  },
+  "stepBack": {
+    "name": "stepBack",
+    "description": "Move sprite to its last location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "sprite": {
+          "type": "object",
+          "description": "The sprite to move back"
+        },
+        "partner": { "type": "object", "description": "The sprite's partner" },
+        "game": { "type": "object", "description": "The current game state" },
+        "kwargs": { "type": "object", "description": "Additional arguments" }
+      },
+      "required": ["sprite", "partner", "game", "kwargs"]
+    }
+  },
+  "transformTo": {
+    "name": "transformTo",
+    "description": "Transforms sprite to specified type",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "stype": { "type": "string", "description": "type to transform into" },
+        "forceOrientation": {
+          "type": "boolean",
+          "description": "retain orientation of the sprite"
+        },
+        "killSecond": {
+          "type": "boolean",
+          "description": "destroy partner after transformation"
+        }
+      },
+      "required": ["stype"]
+    }
+  },
+  "turnAround": {
+    "name": "turnAround",
+    "description": "Reverses the movement direction of a sprite.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "sprite": { "type": "object", "description": "The affected sprite" },
+        "partner": {
+          "type": "object",
+          "description": "Another involved sprite"
+        },
+        "game": {
+          "type": "object",
+          "description": "The current game instance"
+        },
+        "kwargs": {
+          "type": "object",
+          "description": "Additional optional parameters"
+        }
+      },
+      "required": ["sprite", "partner", "game", "kwargs"]
+    }
+  },
+  "wrapAround": {
+    "name": "wrapAround",
+    "description": "Transports sprite to opposite edge when moving out of bounds.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "offset": {
+          "type": "number",
+          "description": "Offsets the wrapping position."
+        }
+      },
+      "required": []
+    }
+  }
+}

@@ -1,0 +1,1403 @@
+{
+  "gridphysics": {
+    "aliens": [
+      "aliens_lvl0.txt",
+      "aliens_lvl1.txt",
+      "aliens_lvl2.txt",
+      "aliens_lvl3.txt",
+      "aliens_lvl4.txt"
+    ],
+    "angelsdemons": [
+      "angelsdemons_lvl0.txt",
+      "angelsdemons_lvl1.txt",
+      "angelsdemons_lvl2.txt",
+      "angelsdemons_lvl3.txt",
+      "angelsdemons_lvl4.txt"
+    ],
+    "assemblyline": [
+      "assemblyline_lvl0.txt",
+      "assemblyline_lvl1.txt",
+      "assemblyline_lvl2.txt",
+      "assemblyline_lvl3.txt",
+      "assemblyline_lvl4.txt"
+    ],
+    "avoidgeorge": [
+      "avoidgeorge_lvl0.txt",
+      "avoidgeorge_lvl1.txt",
+      "avoidgeorge_lvl2.txt",
+      "avoidgeorge_lvl3.txt",
+      "avoidgeorge_lvl4.txt"
+    ],
+    "bait": [
+      "bait_lvl0.txt",
+      "bait_lvl1.txt",
+      "bait_lvl2.txt",
+      "bait_lvl3.txt",
+      "bait_lvl4.txt"
+    ],
+    "beltmanager": [
+      "beltmanager_lvl0.txt",
+      "beltmanager_lvl1.txt",
+      "beltmanager_lvl2.txt",
+      "beltmanager_lvl3.txt",
+      "beltmanager_lvl4.txt"
+    ],
+    "blacksmoke": [
+      "blacksmoke_lvl0.txt",
+      "blacksmoke_lvl1.txt",
+      "blacksmoke_lvl2.txt",
+      "blacksmoke_lvl3.txt",
+      "blacksmoke_lvl4.txt"
+    ],
+    "boloadventures": [
+      "boloadventures_lvl0.txt",
+      "boloadventures_lvl1.txt",
+      "boloadventures_lvl2.txt",
+      "boloadventures_lvl3.txt",
+      "boloadventures_lvl4.txt"
+    ],
+    "bomber": [
+      "bomber_lvl0.txt",
+      "bomber_lvl1.txt",
+      "bomber_lvl2.txt",
+      "bomber_lvl3.txt",
+      "bomber_lvl4.txt"
+    ],
+    "bomberman": [
+      "bomberman_lvl0.txt",
+      "bomberman_lvl1.txt",
+      "bomberman_lvl2.txt",
+      "bomberman_lvl3.txt",
+      "bomberman_lvl4.txt"
+    ],
+    "boulderchase": [
+      "boulderchase_lvl0.txt",
+      "boulderchase_lvl1.txt",
+      "boulderchase_lvl2.txt",
+      "boulderchase_lvl3.txt",
+      "boulderchase_lvl4.txt"
+    ],
+    "boulderdash": [
+      "boulderdash_lvl0.txt",
+      "boulderdash_lvl1.txt",
+      "boulderdash_lvl2.txt",
+      "boulderdash_lvl3.txt",
+      "boulderdash_lvl4.txt"
+    ],
+    "brainman": [
+      "brainman_lvl0.txt",
+      "brainman_lvl1.txt",
+      "brainman_lvl2.txt",
+      "brainman_lvl3.txt",
+      "brainman_lvl4.txt"
+    ],
+    "butterflies": [
+      "butterflies_lvl0.txt",
+      "butterflies_lvl1.txt",
+      "butterflies_lvl2.txt",
+      "butterflies_lvl3.txt",
+      "butterflies_lvl4.txt"
+    ],
+    "cakybaky": [
+      "cakybaky_lvl0.txt",
+      "cakybaky_lvl1.txt",
+      "cakybaky_lvl2.txt",
+      "cakybaky_lvl3.txt",
+      "cakybaky_lvl4.txt"
+    ],
+    "camelRace": [
+      "camelRace_lvl0.txt",
+      "camelRace_lvl1.txt",
+      "camelRace_lvl2.txt",
+      "camelRace_lvl3.txt",
+      "camelRace_lvl4.txt"
+    ],
+    "catapults": [
+      "catapults_lvl0.txt",
+      "catapults_lvl1.txt",
+      "catapults_lvl2.txt",
+      "catapults_lvl3.txt",
+      "catapults_lvl4.txt"
+    ],
+    "chainreaction": [
+      "chainreaction_lvl0.txt",
+      "chainreaction_lvl1.txt",
+      "chainreaction_lvl2.txt",
+      "chainreaction_lvl3.txt",
+      "chainreaction_lvl4.txt"
+    ],
+    "chase": [
+      "chase_lvl0.txt",
+      "chase_lvl1.txt",
+      "chase_lvl2.txt",
+      "chase_lvl3.txt",
+      "chase_lvl4.txt",
+      "chase_lvl0.txt",
+      "chase_lvl1.txt",
+      "chase_lvl2.txt",
+      "chase_lvl3.txt",
+      "chase_lvl4.txt"
+    ],
+    "chipschallenge": [
+      "chipschallenge_lvl0.txt",
+      "chipschallenge_lvl1.txt",
+      "chipschallenge_lvl2.txt",
+      "chipschallenge_lvl3.txt",
+      "chipschallenge_lvl4.txt"
+    ],
+    "chopper": [
+      "chopper_lvl0.txt",
+      "chopper_lvl1.txt",
+      "chopper_lvl2.txt",
+      "chopper_lvl3.txt",
+      "chopper_lvl4.txt"
+    ],
+    "circuit": [
+      "circuit_lvl0.txt",
+      "circuit_lvl1.txt",
+      "circuit_lvl2.txt",
+      "circuit_lvl3.txt",
+      "circuit_lvl4.txt"
+    ],
+    "clusters": [
+      "clusters_lvl0.txt",
+      "clusters_lvl1.txt",
+      "clusters_lvl2.txt",
+      "clusters_lvl3.txt",
+      "clusters_lvl4.txt"
+    ],
+    "colourescape": [
+      "colourescape_lvl0.txt",
+      "colourescape_lvl1.txt",
+      "colourescape_lvl2.txt",
+      "colourescape_lvl3.txt",
+      "colourescape_lvl4.txt"
+    ],
+    "cookmepasta": [
+      "cookmepasta_lvl0.txt",
+      "cookmepasta_lvl1.txt",
+      "cookmepasta_lvl2.txt",
+      "cookmepasta_lvl3.txt",
+      "cookmepasta_lvl4.txt"
+    ],
+    "cops": [
+      "cops_lvl0.txt",
+      "cops_lvl1.txt",
+      "cops_lvl2.txt",
+      "cops_lvl3.txt",
+      "cops_lvl4.txt"
+    ],
+    "crossfire": [
+      "crossfire_lvl0.txt",
+      "crossfire_lvl1.txt",
+      "crossfire_lvl2.txt",
+      "crossfire_lvl3.txt",
+      "crossfire_lvl4.txt"
+    ],
+    "decepticoins": [
+      "decepticoins_lvl0.txt",
+      "decepticoins_lvl1.txt",
+      "decepticoins_lvl2.txt",
+      "decepticoins_lvl3.txt",
+      "decepticoins_lvl4.txt"
+    ],
+    "deceptizelda": [
+      "deceptizelda_lvl0.txt",
+      "deceptizelda_lvl1.txt",
+      "deceptizelda_lvl2.txt",
+      "deceptizelda_lvl3.txt",
+      "deceptizelda_lvl4.txt"
+    ],
+    "defem": [
+      "defem_lvl0.txt",
+      "defem_lvl1.txt",
+      "defem_lvl2.txt",
+      "defem_lvl3.txt",
+      "defem_lvl4.txt"
+    ],
+    "defender": [
+      "defender_lvl0.txt",
+      "defender_lvl1.txt",
+      "defender_lvl2.txt",
+      "defender_lvl3.txt",
+      "defender_lvl4.txt"
+    ],
+    "deflection": [
+      "deflection_lvl0.txt",
+      "deflection_lvl1.txt",
+      "deflection_lvl2.txt",
+      "deflection_lvl3.txt",
+      "deflection_lvl4.txt"
+    ],
+    "digdug": [
+      "digdug_lvl0.txt",
+      "digdug_lvl1.txt",
+      "digdug_lvl2.txt",
+      "digdug_lvl3.txt",
+      "digdug_lvl4.txt"
+    ],
+    "donkeykong": [
+      "donkeykong_lvl0.txt",
+      "donkeykong_lvl1.txt",
+      "donkeykong_lvl2.txt",
+      "donkeykong_lvl3.txt",
+      "donkeykong_lvl4.txt"
+    ],
+    "doorkoban": [
+      "doorkoban_lvl0.txt",
+      "doorkoban_lvl1.txt",
+      "doorkoban_lvl2.txt",
+      "doorkoban_lvl3.txt",
+      "doorkoban_lvl4.txt"
+    ],
+    "dungeon": [
+      "dungeon_lvl0.txt",
+      "dungeon_lvl1.txt",
+      "dungeon_lvl2.txt",
+      "dungeon_lvl3.txt",
+      "dungeon_lvl4.txt"
+    ],
+    "eggomania": [
+      "eggomania_lvl0.txt",
+      "eggomania_lvl1.txt",
+      "eggomania_lvl2.txt",
+      "eggomania_lvl3.txt",
+      "eggomania_lvl4.txt"
+    ],
+    "eighthpassenger": [
+      "eighthpassenger_lvl0.txt",
+      "eighthpassenger_lvl1.txt",
+      "eighthpassenger_lvl2.txt",
+      "eighthpassenger_lvl3.txt",
+      "eighthpassenger_lvl4.txt"
+    ],
+    "enemycitadel": [
+      "enemycitadel_lvl0.txt",
+      "enemycitadel_lvl1.txt",
+      "enemycitadel_lvl2.txt",
+      "enemycitadel_lvl3.txt",
+      "enemycitadel_lvl4.txt"
+    ],
+    "escape": [
+      "escape_lvl0.txt",
+      "escape_lvl1.txt",
+      "escape_lvl2.txt",
+      "escape_lvl3.txt",
+      "escape_lvl4.txt",
+      "escape_lvl0.txt",
+      "escape_lvl1.txt",
+      "escape_lvl2.txt",
+      "escape_lvl3.txt",
+      "escape_lvl4.txt"
+    ],
+    "explore": [
+      "explore_lvl0.txt",
+      "explore_lvl1.txt",
+      "explore_lvl2.txt",
+      "explore_lvl3.txt",
+      "explore_lvl4.txt"
+    ],
+    "factorymanager": [
+      "factorymanager_lvl0.txt",
+      "factorymanager_lvl1.txt",
+      "factorymanager_lvl2.txt",
+      "factorymanager_lvl3.txt",
+      "factorymanager_lvl4.txt"
+    ],
+    "firecaster": [
+      "firecaster_lvl0.txt",
+      "firecaster_lvl1.txt",
+      "firecaster_lvl2.txt",
+      "firecaster_lvl3.txt",
+      "firecaster_lvl4.txt"
+    ],
+    "fireman": [
+      "fireman_lvl0.txt",
+      "fireman_lvl1.txt",
+      "fireman_lvl2.txt",
+      "fireman_lvl3.txt",
+      "fireman_lvl4.txt"
+    ],
+    "firestorms": [
+      "firestorms_lvl0.txt",
+      "firestorms_lvl1.txt",
+      "firestorms_lvl2.txt",
+      "firestorms_lvl3.txt",
+      "firestorms_lvl4.txt"
+    ],
+    "flower": [
+      "flower_lvl0.txt",
+      "flower_lvl1.txt",
+      "flower_lvl2.txt",
+      "flower_lvl3.txt",
+      "flower_lvl4.txt"
+    ],
+    "freeway": [
+      "freeway_lvl0.txt",
+      "freeway_lvl1.txt",
+      "freeway_lvl2.txt",
+      "freeway_lvl3.txt",
+      "freeway_lvl4.txt"
+    ],
+    "frogs": [
+      "frogs_lvl0.txt",
+      "frogs_lvl1.txt",
+      "frogs_lvl2.txt",
+      "frogs_lvl3.txt",
+      "frogs_lvl4.txt"
+    ],
+    "garbagecollector": [
+      "garbagecollector_lvl0.txt",
+      "garbagecollector_lvl1.txt",
+      "garbagecollector_lvl2.txt",
+      "garbagecollector_lvl3.txt",
+      "garbagecollector_lvl4.txt"
+    ],
+    "ghostbuster": [
+      "ghostbuster_lvl0.txt",
+      "ghostbuster_lvl1.txt",
+      "ghostbuster_lvl2.txt",
+      "ghostbuster_lvl3.txt",
+      "ghostbuster_lvl4.txt"
+    ],
+    "glow": [
+      "glow_lvl0.txt",
+      "glow_lvl1.txt",
+      "glow_lvl2.txt",
+      "glow_lvl3.txt",
+      "glow_lvl4.txt"
+    ],
+    "grow": [
+      "grow_lvl0.txt",
+      "grow_lvl1.txt",
+      "grow_lvl2.txt",
+      "grow_lvl3.txt",
+      "grow_lvl4.txt"
+    ],
+    "gymkhana": [
+      "gymkhana_lvl0.txt",
+      "gymkhana_lvl1.txt",
+      "gymkhana_lvl2.txt",
+      "gymkhana_lvl3.txt",
+      "gymkhana_lvl4.txt"
+    ],
+    "hungrybirds": [
+      "hungrybirds_lvl0.txt",
+      "hungrybirds_lvl1.txt",
+      "hungrybirds_lvl2.txt",
+      "hungrybirds_lvl3.txt",
+      "hungrybirds_lvl4.txt"
+    ],
+    "iceandfire": [
+      "iceandfire_lvl0.txt",
+      "iceandfire_lvl1.txt",
+      "iceandfire_lvl2.txt",
+      "iceandfire_lvl3.txt",
+      "iceandfire_lvl4.txt"
+    ],
+    "ikaruga": [
+      "ikaruga_lvl0.txt",
+      "ikaruga_lvl1.txt",
+      "ikaruga_lvl2.txt",
+      "ikaruga_lvl3.txt",
+      "ikaruga_lvl4.txt"
+    ],
+    "infection": [
+      "infection_lvl0.txt",
+      "infection_lvl1.txt",
+      "infection_lvl2.txt",
+      "infection_lvl3.txt",
+      "infection_lvl4.txt"
+    ],
+    "intersection": [
+      "intersection_lvl0.txt",
+      "intersection_lvl1.txt",
+      "intersection_lvl2.txt",
+      "intersection_lvl3.txt",
+      "intersection_lvl4.txt"
+    ],
+    "invest": [
+      "invest_lvl0.txt",
+      "invest_lvl1.txt",
+      "invest_lvl2.txt",
+      "invest_lvl3.txt",
+      "invest_lvl4.txt"
+    ],
+    "islands": [
+      "islands_lvl0.txt",
+      "islands_lvl1.txt",
+      "islands_lvl2.txt",
+      "islands_lvl3.txt",
+      "islands_lvl4.txt"
+    ],
+    "jaws": [
+      "jaws_lvl0.txt",
+      "jaws_lvl1.txt",
+      "jaws_lvl2.txt",
+      "jaws_lvl3.txt",
+      "jaws_lvl4.txt"
+    ],
+    "killBillVol1": [
+      "killBillVol1_lvl0.txt",
+      "killBillVol1_lvl1.txt",
+      "killBillVol1_lvl2.txt",
+      "killBillVol1_lvl3.txt",
+      "killBillVol1_lvl4.txt"
+    ],
+    "labyrinth": [
+      "labyrinth_lvl0.txt",
+      "labyrinth_lvl1.txt",
+      "labyrinth_lvl2.txt",
+      "labyrinth_lvl3.txt",
+      "labyrinth_lvl4.txt"
+    ],
+    "labyrinthdual": [
+      "labyrinthdual_lvl0.txt",
+      "labyrinthdual_lvl1.txt",
+      "labyrinthdual_lvl2.txt",
+      "labyrinthdual_lvl3.txt",
+      "labyrinthdual_lvl4.txt"
+    ],
+    "lasers": [
+      "lasers_lvl0.txt",
+      "lasers_lvl1.txt",
+      "lasers_lvl2.txt",
+      "lasers_lvl3.txt",
+      "lasers_lvl4.txt"
+    ],
+    "lasers2": [
+      "lasers2_lvl0.txt",
+      "lasers2_lvl1.txt",
+      "lasers2_lvl2.txt",
+      "lasers2_lvl3.txt",
+      "lasers2_lvl4.txt"
+    ],
+    "lemmings": [
+      "lemmings_lvl0.txt",
+      "lemmings_lvl1.txt",
+      "lemmings_lvl2.txt",
+      "lemmings_lvl3.txt",
+      "lemmings_lvl4.txt"
+    ],
+    "link": [
+      "link_lvl0.txt",
+      "link_lvl1.txt",
+      "link_lvl2.txt",
+      "link_lvl3.txt",
+      "link_lvl4.txt"
+    ],
+    "mirrors": [
+      "mirrors_lvl0.txt",
+      "mirrors_lvl1.txt",
+      "mirrors_lvl2.txt",
+      "mirrors_lvl3.txt",
+      "mirrors_lvl4.txt"
+    ],
+    "missilecommand": [
+      "missilecommand_lvl0.txt",
+      "missilecommand_lvl1.txt",
+      "missilecommand_lvl2.txt",
+      "missilecommand_lvl3.txt",
+      "missilecommand_lvl4.txt"
+    ],
+    "modality": [
+      "modality_lvl0.txt",
+      "modality_lvl1.txt",
+      "modality_lvl2.txt",
+      "modality_lvl3.txt",
+      "modality_lvl4.txt"
+    ],
+    "myAliens": [
+      "myAliens_lvl0.txt",
+      "myAliens_lvl1.txt",
+      "myAliens_lvl2.txt",
+      "myAliens_lvl3.txt",
+      "myAliens_lvl4.txt"
+    ],
+    "overload": [
+      "overload_lvl0.txt",
+      "overload_lvl1.txt",
+      "overload_lvl2.txt",
+      "overload_lvl3.txt",
+      "overload_lvl4.txt"
+    ],
+    "pacman": [
+      "pacman_lvl0.txt",
+      "pacman_lvl1.txt",
+      "pacman_lvl2.txt",
+      "pacman_lvl3.txt",
+      "pacman_lvl4.txt"
+    ],
+    "pacoban": [
+      "pacoban_lvl0.txt",
+      "pacoban_lvl1.txt",
+      "pacoban_lvl2.txt",
+      "pacoban_lvl3.txt",
+      "pacoban_lvl4.txt"
+    ],
+    "painter": [
+      "painter_lvl0.txt",
+      "painter_lvl1.txt",
+      "painter_lvl2.txt",
+      "painter_lvl3.txt",
+      "painter_lvl4.txt"
+    ],
+    "plants": [
+      "plants_lvl0.txt",
+      "plants_lvl1.txt",
+      "plants_lvl2.txt",
+      "plants_lvl3.txt",
+      "plants_lvl4.txt"
+    ],
+    "plaqueattack": [
+      "plaqueattack_lvl0.txt",
+      "plaqueattack_lvl1.txt",
+      "plaqueattack_lvl2.txt",
+      "plaqueattack_lvl3.txt",
+      "plaqueattack_lvl4.txt"
+    ],
+    "pokemon": [
+      "pokemon_lvl0.txt",
+      "pokemon_lvl1.txt",
+      "pokemon_lvl2.txt",
+      "pokemon_lvl3.txt",
+      "pokemon_lvl4.txt"
+    ],
+    "portals": [
+      "portals_lvl0.txt",
+      "portals_lvl1.txt",
+      "portals_lvl2.txt",
+      "portals_lvl3.txt",
+      "portals_lvl4.txt",
+      "portals_lvl0.txt",
+      "portals_lvl1.txt",
+      "portals_lvl2.txt",
+      "portals_lvl3.txt",
+      "portals_lvl4.txt"
+    ],
+    "racebet": [
+      "racebet_lvl0.txt",
+      "racebet_lvl1.txt",
+      "racebet_lvl2.txt",
+      "racebet_lvl3.txt",
+      "racebet_lvl4.txt"
+    ],
+    "racebet2": [
+      "racebet2_lvl0.txt",
+      "racebet2_lvl1.txt",
+      "racebet2_lvl2.txt",
+      "racebet2_lvl3.txt",
+      "racebet2_lvl4.txt"
+    ],
+    "realportals": [
+      "realportals_lvl0.txt",
+      "realportals_lvl1.txt",
+      "realportals_lvl2.txt",
+      "realportals_lvl3.txt",
+      "realportals_lvl4.txt"
+    ],
+    "realsokoban": [
+      "realsokoban_lvl0.txt",
+      "realsokoban_lvl1.txt",
+      "realsokoban_lvl2.txt",
+      "realsokoban_lvl3.txt",
+      "realsokoban_lvl4.txt"
+    ],
+    "rivers": [
+      "rivers_lvl0.txt",
+      "rivers_lvl1.txt",
+      "rivers_lvl2.txt",
+      "rivers_lvl3.txt",
+      "rivers_lvl4.txt"
+    ],
+    "roadfighter": [
+      "roadfighter_lvl0.txt",
+      "roadfighter_lvl1.txt",
+      "roadfighter_lvl2.txt",
+      "roadfighter_lvl3.txt",
+      "roadfighter_lvl4.txt"
+    ],
+    "roguelike": [
+      "roguelike_lvl0.txt",
+      "roguelike_lvl1.txt",
+      "roguelike_lvl2.txt",
+      "roguelike_lvl3.txt",
+      "roguelike_lvl4.txt"
+    ],
+    "run": [
+      "run_lvl0.txt",
+      "run_lvl1.txt",
+      "run_lvl2.txt",
+      "run_lvl3.txt",
+      "run_lvl4.txt"
+    ],
+    "seaquest": [
+      "seaquest_lvl0.txt",
+      "seaquest_lvl1.txt",
+      "seaquest_lvl2.txt",
+      "seaquest_lvl3.txt",
+      "seaquest_lvl4.txt"
+    ],
+    "sheriff": [
+      "sheriff_lvl0.txt",
+      "sheriff_lvl1.txt",
+      "sheriff_lvl2.txt",
+      "sheriff_lvl3.txt",
+      "sheriff_lvl4.txt"
+    ],
+    "shipwreck": [
+      "shipwreck_lvl0.txt",
+      "shipwreck_lvl1.txt",
+      "shipwreck_lvl2.txt",
+      "shipwreck_lvl3.txt",
+      "shipwreck_lvl4.txt"
+    ],
+    "sistersavior": [
+      "sistersavior_lvl0.txt",
+      "sistersavior_lvl1.txt",
+      "sistersavior_lvl2.txt",
+      "sistersavior_lvl3.txt",
+      "sistersavior_lvl4.txt"
+    ],
+    "slide": [
+      "slide_lvl0.txt",
+      "slide_lvl1.txt",
+      "slide_lvl2.txt",
+      "slide_lvl3.txt",
+      "slide_lvl4.txt"
+    ],
+    "sokoban": [
+      "sokoban_lvl0.txt",
+      "sokoban_lvl1.txt",
+      "sokoban_lvl2.txt",
+      "sokoban_lvl3.txt",
+      "sokoban_lvl4.txt",
+      "sokoban_lvl0.txt",
+      "sokoban_lvl1.txt",
+      "sokoban_lvl2.txt",
+      "sokoban_lvl3.txt",
+      "sokoban_lvl4.txt",
+      "sokoban_lvl0.txt",
+      "sokoban_lvl1.txt",
+      "sokoban_lvl2.txt",
+      "sokoban_lvl3.txt",
+      "sokoban_lvl4.txt"
+    ],
+    "solarfox": [
+      "solarfox_lvl0.txt",
+      "solarfox_lvl1.txt",
+      "solarfox_lvl2.txt",
+      "solarfox_lvl3.txt",
+      "solarfox_lvl4.txt"
+    ],
+    "superman": [
+      "superman_lvl0.txt",
+      "superman_lvl1.txt",
+      "superman_lvl2.txt",
+      "superman_lvl3.txt",
+      "superman_lvl4.txt"
+    ],
+    "surround": [
+      "surround_lvl0.txt",
+      "surround_lvl1.txt",
+      "surround_lvl2.txt",
+      "surround_lvl3.txt",
+      "surround_lvl4.txt"
+    ],
+    "survivezombies": [
+      "survivezombies_lvl0.txt",
+      "survivezombies_lvl1.txt",
+      "survivezombies_lvl2.txt",
+      "survivezombies_lvl3.txt",
+      "survivezombies_lvl4.txt"
+    ],
+    "tercio": [
+      "tercio_lvl0.txt",
+      "tercio_lvl1.txt",
+      "tercio_lvl2.txt",
+      "tercio_lvl3.txt",
+      "tercio_lvl4.txt"
+    ],
+    "thecitadel": [
+      "thecitadel_lvl0.txt",
+      "thecitadel_lvl1.txt",
+      "thecitadel_lvl2.txt",
+      "thecitadel_lvl3.txt",
+      "thecitadel_lvl4.txt"
+    ],
+    "themole": [
+      "themole_lvl0.txt",
+      "themole_lvl1.txt",
+      "themole_lvl2.txt",
+      "themole_lvl3.txt",
+      "themole_lvl4.txt"
+    ],
+    "theshepherd": [
+      "theshepherd_lvl0.txt",
+      "theshepherd_lvl1.txt",
+      "theshepherd_lvl2.txt",
+      "theshepherd_lvl3.txt",
+      "theshepherd_lvl4.txt"
+    ],
+    "thesnowman": [
+      "thesnowman_lvl0.txt",
+      "thesnowman_lvl1.txt",
+      "thesnowman_lvl2.txt",
+      "thesnowman_lvl3.txt",
+      "thesnowman_lvl4.txt"
+    ],
+    "towerdefense": [
+      "towerdefense_lvl0.txt",
+      "towerdefense_lvl1.txt",
+      "towerdefense_lvl2.txt",
+      "towerdefense_lvl3.txt",
+      "towerdefense_lvl4.txt"
+    ],
+    "vortex": [
+      "vortex_lvl0.txt",
+      "vortex_lvl1.txt",
+      "vortex_lvl2.txt",
+      "vortex_lvl3.txt",
+      "vortex_lvl4.txt"
+    ],
+    "waferthinmints": [
+      "waferthinmints_lvl0.txt",
+      "waferthinmints_lvl1.txt",
+      "waferthinmints_lvl2.txt",
+      "waferthinmints_lvl3.txt",
+      "waferthinmints_lvl4.txt"
+    ],
+    "waferthinmintsexit": [
+      "waferthinmintsexit_lvl0.txt",
+      "waferthinmintsexit_lvl1.txt",
+      "waferthinmintsexit_lvl2.txt",
+      "waferthinmintsexit_lvl3.txt",
+      "waferthinmintsexit_lvl4.txt"
+    ],
+    "waitforbreakfast": [
+      "waitforbreakfast_lvl0.txt",
+      "waitforbreakfast_lvl1.txt",
+      "waitforbreakfast_lvl2.txt",
+      "waitforbreakfast_lvl3.txt",
+      "waitforbreakfast_lvl4.txt"
+    ],
+    "watergame": [
+      "watergame_lvl0.txt",
+      "watergame_lvl1.txt",
+      "watergame_lvl2.txt",
+      "watergame_lvl3.txt",
+      "watergame_lvl4.txt"
+    ],
+    "waves": [
+      "waves_lvl0.txt",
+      "waves_lvl1.txt",
+      "waves_lvl2.txt",
+      "waves_lvl3.txt",
+      "waves_lvl4.txt"
+    ],
+    "whackamole": [
+      "whackamole_lvl0.txt",
+      "whackamole_lvl1.txt",
+      "whackamole_lvl2.txt",
+      "whackamole_lvl3.txt",
+      "whackamole_lvl4.txt"
+    ],
+    "wildgunman": [
+      "wildgunman_lvl0.txt",
+      "wildgunman_lvl1.txt",
+      "wildgunman_lvl2.txt",
+      "wildgunman_lvl3.txt",
+      "wildgunman_lvl4.txt"
+    ],
+    "witnessprotected": [
+      "witnessprotected_lvl0.txt",
+      "witnessprotected_lvl1.txt",
+      "witnessprotected_lvl2.txt",
+      "witnessprotected_lvl3.txt",
+      "witnessprotected_lvl4.txt"
+    ],
+    "witnessprotection": [
+      "witnessprotection_lvl0.txt",
+      "witnessprotection_lvl1.txt",
+      "witnessprotection_lvl2.txt",
+      "witnessprotection_lvl3.txt",
+      "witnessprotection_lvl4.txt"
+    ],
+    "wrapsokoban": [
+      "wrapsokoban_lvl0.txt",
+      "wrapsokoban_lvl1.txt",
+      "wrapsokoban_lvl2.txt",
+      "wrapsokoban_lvl3.txt",
+      "wrapsokoban_lvl4.txt"
+    ],
+    "x-racer": [
+      "x-racer_lvl0.txt",
+      "x-racer_lvl1.txt",
+      "x-racer_lvl2.txt",
+      "x-racer_lvl3.txt",
+      "x-racer_lvl4.txt"
+    ],
+    "zelda": [
+      "zelda_lvl0.txt",
+      "zelda_lvl1.txt",
+      "zelda_lvl2.txt",
+      "zelda_lvl3.txt",
+      "zelda_lvl4.txt",
+      "zelda_lvl0.txt",
+      "zelda_lvl1.txt",
+      "zelda_lvl2.txt",
+      "zelda_lvl3.txt",
+      "zelda_lvl4.txt"
+    ],
+    "zenpuzzle": [
+      "zenpuzzle_lvl0.txt",
+      "zenpuzzle_lvl1.txt",
+      "zenpuzzle_lvl2.txt",
+      "zenpuzzle_lvl3.txt",
+      "zenpuzzle_lvl4.txt"
+    ]
+  },
+  "2player": {
+    "accelerator": [
+      "accelerator_lvl0.txt",
+      "accelerator_lvl1.txt",
+      "accelerator_lvl2.txt",
+      "accelerator_lvl3.txt",
+      "accelerator_lvl4.txt"
+    ],
+    "akkaarrh": [
+      "akkaarrh_lvl0.txt",
+      "akkaarrh_lvl1.txt",
+      "akkaarrh_lvl2.txt",
+      "akkaarrh_lvl3.txt",
+      "akkaarrh_lvl4.txt"
+    ],
+    "aliens": [
+      "aliens_lvl0.txt",
+      "aliens_lvl1.txt",
+      "aliens_lvl2.txt",
+      "aliens_lvl3.txt",
+      "aliens_lvl4.txt"
+    ],
+    "arkanoid2p": [
+      "arkanoid2p_lvl0.txt",
+      "arkanoid2p_lvl1.txt",
+      "arkanoid2p_lvl2.txt",
+      "arkanoid2p_lvl3.txt",
+      "arkanoid2p_lvl4.txt"
+    ],
+    "asteroids": [
+      "asteroids_lvl0.txt",
+      "asteroids_lvl1.txt",
+      "asteroids_lvl2.txt",
+      "asteroids_lvl3.txt",
+      "asteroids_lvl4.txt"
+    ],
+    "beekeeper": [
+      "beekeeper_lvl0.txt",
+      "beekeeper_lvl1.txt",
+      "beekeeper_lvl2.txt",
+      "beekeeper_lvl3.txt",
+      "beekeeper_lvl4.txt"
+    ],
+    "bombergirl": [
+      "bombergirl_lvl0.txt",
+      "bombergirl_lvl1.txt",
+      "bombergirl_lvl2.txt",
+      "bombergirl_lvl3.txt",
+      "bombergirl_lvl4.txt"
+    ],
+    "breedingdragons": [
+      "breedingdragons_lvl0.txt",
+      "breedingdragons_lvl1.txt",
+      "breedingdragons_lvl2.txt",
+      "breedingdragons_lvl3.txt",
+      "breedingdragons_lvl4.txt"
+    ],
+    "butterflies": [
+      "butterflies_lvl0.txt",
+      "butterflies_lvl1.txt",
+      "butterflies_lvl2.txt",
+      "butterflies_lvl3.txt",
+      "butterflies_lvl4.txt"
+    ],
+    "captureflag": [
+      "captureflag_lvl0.txt",
+      "captureflag_lvl1.txt",
+      "captureflag_lvl2.txt",
+      "captureflag_lvl3.txt",
+      "captureflag_lvl4.txt"
+    ],
+    "circuit": [
+      "circuit_lvl0.txt",
+      "circuit_lvl1.txt",
+      "circuit_lvl2.txt",
+      "circuit_lvl3.txt",
+      "circuit_lvl4.txt"
+    ],
+    "competesokoban": [
+      "competesokoban_lvl0.txt",
+      "competesokoban_lvl1.txt",
+      "competesokoban_lvl2.txt",
+      "competesokoban_lvl3.txt",
+      "competesokoban_lvl4.txt"
+    ],
+    "conquer": [
+      "conquer_lvl0.txt",
+      "conquer_lvl1.txt",
+      "conquer_lvl2.txt",
+      "conquer_lvl3.txt",
+      "conquer_lvl4.txt"
+    ],
+    "copsNrobbers": [
+      "copsNrobbers_lvl0.txt",
+      "copsNrobbers_lvl1.txt",
+      "copsNrobbers_lvl2.txt",
+      "copsNrobbers_lvl3.txt",
+      "copsNrobbers_lvl4.txt"
+    ],
+    "decks": [
+      "decks_lvl0.txt",
+      "decks_lvl1.txt",
+      "decks_lvl2.txt",
+      "decks_lvl3.txt",
+      "decks_lvl4.txt"
+    ],
+    "donkeykong": [
+      "donkeykong_lvl0.txt",
+      "donkeykong_lvl1.txt",
+      "donkeykong_lvl2.txt",
+      "donkeykong_lvl3.txt",
+      "donkeykong_lvl4.txt"
+    ],
+    "dragonattack": [
+      "dragonattack_lvl0.txt",
+      "dragonattack_lvl1.txt",
+      "dragonattack_lvl2.txt",
+      "dragonattack_lvl3.txt",
+      "dragonattack_lvl4.txt"
+    ],
+    "drowning": [
+      "drowning_lvl0.txt",
+      "drowning_lvl1.txt",
+      "drowning_lvl2.txt",
+      "drowning_lvl3.txt",
+      "drowning_lvl4.txt"
+    ],
+    "egghunt": [
+      "egghunt_lvl0.txt",
+      "egghunt_lvl1.txt",
+      "egghunt_lvl2.txt",
+      "egghunt_lvl3.txt",
+      "egghunt_lvl4.txt"
+    ],
+    "escape2p": [
+      "escape2p_lvl0.txt",
+      "escape2p_lvl1.txt",
+      "escape2p_lvl2.txt",
+      "escape2p_lvl3.txt",
+      "escape2p_lvl4.txt"
+    ],
+    "explore": [
+      "explore_lvl0.txt",
+      "explore_lvl1.txt",
+      "explore_lvl2.txt",
+      "explore_lvl3.txt",
+      "explore_lvl4.txt"
+    ],
+    "fatty": [
+      "fatty_lvl0.txt",
+      "fatty_lvl1.txt",
+      "fatty_lvl2.txt",
+      "fatty_lvl3.txt",
+      "fatty_lvl4.txt"
+    ],
+    "firetruck": [
+      "firetruck_lvl0.txt",
+      "firetruck_lvl1.txt",
+      "firetruck_lvl2.txt",
+      "firetruck_lvl3.txt",
+      "firetruck_lvl4.txt"
+    ],
+    "football": [
+      "football_lvl0.txt",
+      "football_lvl1.txt",
+      "football_lvl2.txt",
+      "football_lvl3.txt",
+      "football_lvl4.txt"
+    ],
+    "ghostbusters": [
+      "ghostbusters_lvl0.txt",
+      "ghostbusters_lvl1.txt",
+      "ghostbusters_lvl2.txt",
+      "ghostbusters_lvl3.txt",
+      "ghostbusters_lvl4.txt"
+    ],
+    "gotcha": [
+      "gotcha_lvl0.txt",
+      "gotcha_lvl1.txt",
+      "gotcha_lvl2.txt",
+      "gotcha_lvl3.txt",
+      "gotcha_lvl4.txt"
+    ],
+    "hunger-games": [
+      "hunger-games_lvl0.txt",
+      "hunger-games_lvl1.txt",
+      "hunger-games_lvl2.txt",
+      "hunger-games_lvl3.txt",
+      "hunger-games_lvl4.txt"
+    ],
+    "isawsanta": [
+      "isawsanta_lvl0.txt",
+      "isawsanta_lvl1.txt",
+      "isawsanta_lvl2.txt",
+      "isawsanta_lvl3.txt",
+      "isawsanta_lvl4.txt"
+    ],
+    "klax": [
+      "klax_lvl0.txt",
+      "klax_lvl1.txt",
+      "klax_lvl2.txt",
+      "klax_lvl3.txt",
+      "klax_lvl4.txt"
+    ],
+    "mimic": [
+      "mimic_lvl0.txt",
+      "mimic_lvl1.txt",
+      "mimic_lvl2.txt",
+      "mimic_lvl3.txt",
+      "mimic_lvl4.txt"
+    ],
+    "minesweeper": [
+      "minesweeper_lvl0.txt",
+      "minesweeper_lvl1.txt",
+      "minesweeper_lvl2.txt",
+      "minesweeper_lvl3.txt",
+      "minesweeper_lvl4.txt"
+    ],
+    "minions": [
+      "minions_lvl0.txt",
+      "minions_lvl1.txt",
+      "minions_lvl2.txt",
+      "minions_lvl3.txt",
+      "minions_lvl4.txt"
+    ],
+    "oopsbrokeit": [
+      "oopsbrokeit_lvl0.txt",
+      "oopsbrokeit_lvl1.txt",
+      "oopsbrokeit_lvl2.txt",
+      "oopsbrokeit_lvl3.txt",
+      "oopsbrokeit_lvl4.txt"
+    ],
+    "pacoban": [
+      "pacoban_lvl0.txt",
+      "pacoban_lvl1.txt",
+      "pacoban_lvl2.txt",
+      "pacoban_lvl3.txt",
+      "pacoban_lvl4.txt"
+    ],
+    "pong2p": [
+      "pong2p_lvl0.txt",
+      "pong2p_lvl1.txt",
+      "pong2p_lvl2.txt",
+      "pong2p_lvl3.txt",
+      "pong2p_lvl4.txt"
+    ],
+    "portals": [
+      "portals_lvl0.txt",
+      "portals_lvl1.txt",
+      "portals_lvl2.txt",
+      "portals_lvl3.txt",
+      "portals_lvl4.txt"
+    ],
+    "prisoners-dilemma": [
+      "prisoners-dilemma_lvl0.txt",
+      "prisoners-dilemma_lvl1.txt",
+      "prisoners-dilemma_lvl2.txt",
+      "prisoners-dilemma_lvl3.txt",
+      "prisoners-dilemma_lvl4.txt"
+    ],
+    "reflection": [
+      "reflection_lvl0.txt",
+      "reflection_lvl1.txt",
+      "reflection_lvl2.txt",
+      "reflection_lvl3.txt",
+      "reflection_lvl4.txt"
+    ],
+    "rivalry": [
+      "rivalry_lvl0.txt",
+      "rivalry_lvl1.txt",
+      "rivalry_lvl2.txt",
+      "rivalry_lvl3.txt",
+      "rivalry_lvl4.txt"
+    ],
+    "rockpaperscissors": [
+      "rockpaperscissors_lvl0.txt",
+      "rockpaperscissors_lvl1.txt",
+      "rockpaperscissors_lvl2.txt",
+      "rockpaperscissors_lvl3.txt",
+      "rockpaperscissors_lvl4.txt"
+    ],
+    "romeoNjuliet": [
+      "romeoNjuliet_lvl0.txt",
+      "romeoNjuliet_lvl1.txt",
+      "romeoNjuliet_lvl2.txt",
+      "romeoNjuliet_lvl3.txt",
+      "romeoNjuliet_lvl4.txt"
+    ],
+    "samaritan": [
+      "samaritan_lvl0.txt",
+      "samaritan_lvl1.txt",
+      "samaritan_lvl2.txt",
+      "samaritan_lvl3.txt",
+      "samaritan_lvl4.txt"
+    ],
+    "slide": [
+      "slide_lvl0.txt",
+      "slide_lvl1.txt",
+      "slide_lvl2.txt",
+      "slide_lvl3.txt",
+      "slide_lvl4.txt"
+    ],
+    "sokoban": [
+      "sokoban_lvl0.txt",
+      "sokoban_lvl1.txt",
+      "sokoban_lvl2.txt",
+      "sokoban_lvl3.txt",
+      "sokoban_lvl4.txt",
+      "sokoban_lvl0.txt",
+      "sokoban_lvl1.txt",
+      "sokoban_lvl2.txt",
+      "sokoban_lvl3.txt",
+      "sokoban_lvl4.txt"
+    ],
+    "spotted": [
+      "spotted_lvl0.txt",
+      "spotted_lvl1.txt",
+      "spotted_lvl2.txt",
+      "spotted_lvl3.txt",
+      "spotted_lvl4.txt"
+    ],
+    "steeplechase": [
+      "steeplechase_lvl0.txt",
+      "steeplechase_lvl1.txt",
+      "steeplechase_lvl2.txt",
+      "steeplechase_lvl3.txt",
+      "steeplechase_lvl4.txt"
+    ],
+    "teamescape": [
+      "teamescape_lvl0.txt",
+      "teamescape_lvl1.txt",
+      "teamescape_lvl2.txt",
+      "teamescape_lvl3.txt",
+      "teamescape_lvl4.txt"
+    ],
+    "thebridge": [
+      "thebridge_lvl0.txt",
+      "thebridge_lvl1.txt",
+      "thebridge_lvl2.txt",
+      "thebridge_lvl3.txt",
+      "thebridge_lvl4.txt"
+    ],
+    "towerdefense": [
+      "towerdefense_lvl0.txt",
+      "towerdefense_lvl1.txt",
+      "towerdefense_lvl2.txt",
+      "towerdefense_lvl3.txt",
+      "towerdefense_lvl4.txt"
+    ],
+    "trainride": [
+      "trainride_lvl0.txt",
+      "trainride_lvl1.txt",
+      "trainride_lvl2.txt",
+      "trainride_lvl3.txt",
+      "trainride_lvl4.txt"
+    ],
+    "trains": [
+      "trains_lvl0.txt",
+      "trains_lvl1.txt",
+      "trains_lvl2.txt",
+      "trains_lvl3.txt",
+      "trains_lvl4.txt"
+    ],
+    "treasuremap": [
+      "treasuremap_lvl0.txt",
+      "treasuremap_lvl1.txt",
+      "treasuremap_lvl2.txt",
+      "treasuremap_lvl3.txt",
+      "treasuremap_lvl4.txt"
+    ],
+    "tron": [
+      "tron_lvl0.txt",
+      "tron_lvl1.txt",
+      "tron_lvl2.txt",
+      "tron_lvl3.txt",
+      "tron_lvl4.txt"
+    ],
+    "unbalanced": [
+      "unbalanced_lvl0.txt",
+      "unbalanced_lvl1.txt",
+      "unbalanced_lvl2.txt",
+      "unbalanced_lvl3.txt",
+      "unbalanced_lvl4.txt"
+    ],
+    "upchess": [
+      "upchess_lvl0.txt",
+      "upchess_lvl1.txt",
+      "upchess_lvl2.txt",
+      "upchess_lvl3.txt",
+      "upchess_lvl4.txt"
+    ],
+    "upgrade-x": [
+      "upgrade-x_lvl0.txt",
+      "upgrade-x_lvl1.txt",
+      "upgrade-x_lvl2.txt",
+      "upgrade-x_lvl3.txt",
+      "upgrade-x_lvl4.txt"
+    ],
+    "uphigh": [
+      "uphigh_lvl0.txt",
+      "uphigh_lvl1.txt",
+      "uphigh_lvl2.txt",
+      "uphigh_lvl3.txt",
+      "uphigh_lvl4.txt"
+    ],
+    "warzone": [
+      "warzone_lvl0.txt",
+      "warzone_lvl1.txt",
+      "warzone_lvl2.txt",
+      "warzone_lvl3.txt",
+      "warzone_lvl4.txt"
+    ],
+    "watchout": [
+      "watchout_lvl0.txt",
+      "watchout_lvl1.txt",
+      "watchout_lvl2.txt",
+      "watchout_lvl3.txt",
+      "watchout_lvl4.txt"
+    ],
+    "wheelme": [
+      "wheelme_lvl0.txt",
+      "wheelme_lvl1.txt",
+      "wheelme_lvl2.txt",
+      "wheelme_lvl3.txt",
+      "wheelme_lvl4.txt"
+    ]
+  },
+  "contphysics": {
+    "arkanoid": [
+      "arkanoid_lvl0.txt",
+      "arkanoid_lvl1.txt",
+      "arkanoid_lvl2.txt",
+      "arkanoid_lvl3.txt",
+      "arkanoid_lvl4.txt"
+    ],
+    "artillery": [
+      "artillery_lvl0.txt",
+      "artillery_lvl1.txt",
+      "artillery_lvl2.txt",
+      "artillery_lvl3.txt",
+      "artillery_lvl4.txt"
+    ],
+    "asteroids": [
+      "asteroids_lvl0.txt",
+      "asteroids_lvl1.txt",
+      "asteroids_lvl2.txt",
+      "asteroids_lvl3.txt",
+      "asteroids_lvl4.txt"
+    ],
+    "bird": [
+      "bird_lvl0.txt",
+      "bird_lvl1.txt",
+      "bird_lvl2.txt",
+      "bird_lvl3.txt",
+      "bird_lvl4.txt"
+    ],
+    "bubble": [
+      "bubble_lvl0.txt",
+      "bubble_lvl1.txt",
+      "bubble_lvl2.txt",
+      "bubble_lvl3.txt",
+      "bubble_lvl4.txt"
+    ],
+    "candy": [
+      "candy_lvl0.txt",
+      "candy_lvl1.txt",
+      "candy_lvl2.txt",
+      "candy_lvl3.txt",
+      "candy_lvl4.txt"
+    ],
+    "jumper": [
+      "jumper_lvl0.txt",
+      "jumper_lvl1.txt",
+      "jumper_lvl2.txt",
+      "jumper_lvl3.txt",
+      "jumper_lvl4.txt"
+    ],
+    "lander": [
+      "lander_lvl0.txt",
+      "lander_lvl1.txt",
+      "lander_lvl2.txt",
+      "lander_lvl3.txt",
+      "lander_lvl4.txt"
+    ],
+    "mario": [
+      "mario_lvl0.txt",
+      "mario_lvl1.txt",
+      "mario_lvl2.txt",
+      "mario_lvl3.txt",
+      "mario_lvl4.txt"
+    ],
+    "pong": [
+      "pong_lvl0.txt",
+      "pong_lvl1.txt",
+      "pong_lvl2.txt",
+      "pong_lvl3.txt",
+      "pong_lvl4.txt"
+    ],
+    "ptsp": [
+      "ptsp_lvl0.txt",
+      "ptsp_lvl1.txt",
+      "ptsp_lvl2.txt",
+      "ptsp_lvl3.txt",
+      "ptsp_lvl4.txt"
+    ],
+    "racing": [
+      "racing_lvl0.txt",
+      "racing_lvl1.txt",
+      "racing_lvl2.txt",
+      "racing_lvl3.txt",
+      "racing_lvl4.txt"
+    ]
+  },
+  "gameDesign": {
+    "aliens": [
+      "aliens_lvl0.txt",
+      "aliens_lvl1.txt",
+      "aliens_lvl2.txt",
+      "aliens_lvl3.txt",
+      "aliens_lvl4.txt"
+    ],
+    "fatty": [
+      "fatty_lvl0.txt",
+      "fatty_lvl1.txt",
+      "fatty_lvl2.txt",
+      "fatty_lvl3.txt",
+      "fatty_lvl4.txt"
+    ],
+    "ghostbusters": [
+      "ghostbusters_lvl0.txt",
+      "ghostbusters_lvl1.txt",
+      "ghostbusters_lvl2.txt",
+      "ghostbusters_lvl3.txt",
+      "ghostbusters_lvl4.txt"
+    ],
+    "seaquest": [
+      "seaquest_lvl0.txt",
+      "seaquest_lvl1.txt",
+      "seaquest_lvl2.txt",
+      "seaquest_lvl3.txt",
+      "seaquest_lvl4.txt"
+    ]
+  }
+}

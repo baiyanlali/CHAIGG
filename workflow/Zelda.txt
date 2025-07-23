@@ -1,0 +1,11 @@
+Please write a arcade zelda-like game. 
+Where there are a PlayerWithoutKey, a PlayerWithKey, enemies, walls, one key and one door. 
+The PlayerWithoutKey and PlayerWithKey can move around in a 2d grid map. 
+When PlayerWithoutKey and PlayerWithKey collide the wall, the PlayerWithoutKey and PlayerWithKey will step back. 
+When PlayerWithoutKey hits the key, the PlayerWithoutKey will transformTo PlayerWithKey.
+When PlayerWithoutKey and PlayerWithKey hits the enemies, PlayerWithoutKey and PlayerWithKey will be killed.  
+When PlayerWithKey hits door, door will disappear. 
+When enemies hit wall, enemies will step back.
+When number of player equals to zero, game will lose.
+When number of door equals to zero, game will win. 
+Enemies will wonder randomly.

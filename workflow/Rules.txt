@@ -1,0 +1,16 @@
+{original_text}
+
+Please extract the game rules information. Please do not output anything else.
+
+Please output in the following format:
+
+## Rule1:
+From:  which entity (Player, Wall, etc)
+To: to which entity (Player, Wall, etc)
+Who Take Effect: entity name (e.g. Player)
+Effect: what will happen when they collide
+## Rule2
+From:  which entity (Player, Wall, etc)
+To: to which entity (Player, Wall, etc)
+Who Take Effect: entity name (e.g. Player)
+Effect: what will happen when they collide
